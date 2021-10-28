@@ -1,0 +1,96 @@
+.header-membership-banner {
+	background: url('/static/images/membership-page-main-banner.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+}
+
+.membership-name {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.membership-smallname {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.membership-description {
+    min-height: 70px;
+}
+
+.membership-description-list {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.membership-price {
+    font-weight: 600;
+    font-size: 6rem;
+    line-height: 4rem;
+}
+
+.membership-euro {
+	font-weight: 400;
+    font-size: 2.75rem;
+}
+
+.membership-payinterval {
+	font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.no-fee {
+	font-size: .875rem;
+	font-weight: 500;
+}
+
+.disclaimer {
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.disclaimer > a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.button-start-red {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+	margin-bottom: 50px;
+	background-color: #fff;
+}
+
+.button-start-white {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+	margin-bottom: 50px;
+	background-color: #9f1323;
+	color: #fff;
+}
+
+.button-start-red:hover,
+.button-start-white:hover {
+    background-color: #f7243c;
+	color: #fff;
+	text-decoration: none;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    transition: background-color 0.3s ease-out;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 576px) {
+	.header-membership-banner {
+        height: 400px;
+    }
+}
