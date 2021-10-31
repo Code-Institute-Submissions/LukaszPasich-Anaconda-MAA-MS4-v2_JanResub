@@ -86,7 +86,7 @@
 
             <!-- Shopping Bag link -->
             <li class="list-inline-item my-0 px-1">
-              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-light{% endif %} nav-link" href="#">
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-light{% endif %} nav-link" href="{% url 'view_bag' %}">
                 <div class="text-center">
                   <div>
                     <!-- <i class="fas fa-shopping-bag fa-lg"></i> -->
@@ -125,7 +125,7 @@
             <!-- Shopping Bag link -->
             <div class="col-12 col-sm-11">
               <li class="list-inline-item mt-2 px-1">
-                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-light{% endif %} nav-link" href="#">
+                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-light{% endif %} nav-link" href="{% url 'view_bag' %}">
                   <div>
                     <div>
                       <!-- <i class="fas fa-shopping-bag fa-lg"></i> -->
