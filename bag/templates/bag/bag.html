@@ -1,13 +1,38 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
+<!-- {% block extra_css %}
     <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
-{% endblock %}
+{% endblock %} -->
 
 
 {% block content %}
-<!-- main banner -->
+<!-- heading -->
+<div class="row justify-content-center bg-dgrey">
+    <div class="col-11 col-lg-10">
+        <h2 class="px-5 pb-3">Shopping bag</h2>
+        <hr class="hr-light">
+    </div>
+</div>
 
+<!-- bag content -->
+<div class="row justify-content-center bg-dgrey">
+    <div class="col-11 col-lg-10">
+        {% if bag_items %}
+        <div class="table-responsive rounded">
 
+        </div>
+        {% else %}
+        <div class="col-11 col-lg-6">
+            <p class="mb-5 text-light">Your bag is empty.</p>
+            <a href="{% url 'products' %}" class="btn btn-outline-light button-white-outline rounded mb-5 px-4">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Back to Shop</span>
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>
 {% endblock %}
