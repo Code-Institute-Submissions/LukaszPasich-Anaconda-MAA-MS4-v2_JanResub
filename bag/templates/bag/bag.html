@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-<!-- {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'home/css/home.css' %}">
-{% endblock %} -->
-
 
 {% block content %}
 <!-- heading -->
@@ -16,7 +12,7 @@
 </div>
 
 <!-- bag content -->
-<div class="row justify-content-center bg-dgrey">
+<div class="row justify-content-center bg-dgrey minh-400px">
     <div class="col-11 col-lg-10">
         {% if bag_items %}
         <div class="table-responsive rounded">
@@ -25,7 +21,7 @@
         {% else %}
         <div class="col-11 col-lg-6">
             <p class="mb-5 text-light">Your bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-light button-white-outline rounded mb-5 px-4">
+            <a href="{% url 'products' %}" class="btn btn-outline-light button-white-outline rounded mb-5 pl-4 pr-5">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>

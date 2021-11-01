@@ -110,6 +110,14 @@ h5 {
     color: #111;
 }
 
+.minh-300px {
+    min-height: 300px;
+}
+
+.minh-400px {
+    min-height: 500px;
+}
+
 /* 1. NAVBAR STYLES */
 
 .logo {
@@ -281,6 +289,11 @@ footer a:hover {
         border-bottom: 1px solid #bbb;
         margin-bottom: 20px;
     }
+
+    .button-white-outline {
+        width: 280px;
+    }
+
 }
 
 @media screen and (max-width: 576px) {

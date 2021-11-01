@@ -27,6 +27,12 @@
     font-size: 1rem;
 }
 
+.free-price {
+    font-weight: 600;
+    font-size: 5.5rem;
+    line-height: 4rem;
+}
+
 .membership-price {
     font-weight: 600;
     font-size: 6rem;
