@@ -16,9 +16,94 @@
     <div class="col-11 col-lg-10">
         {% if bag_items %}
         <div class="table-responsive rounded text-light pt-3 pb-5">
-            {{ bag_items }}
+            
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+
+                    <!-- Table header -->
+                    <thead class="text-light">
+                        <tr>
+                            <th scope="col">Product Info</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Table rows -->
+                    {% for item in bag_items %}
+                        <tr class="text-light border-bottom border-secondary">
+                            <td class="p-3 w-25">
+                                <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">{{ item.product.name }}</p>
+                                <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">&euro;{{ item.product.price }}</p>
+                            </td>
+                            <td class="py-3 w-25">
+                                <p class="my-0">{{ item.quantity }}</p>
+                            </td>
+                            <td class="py-3">
+                                <p class="my-0">&euro;{{ item.product.price }}</p>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    
+                    <!-- Bag total -->
+                    <tr>
+                        <td colspan="5" class="pt-5 text-right text-light pr-5">
+                            <hr class="hr-light-thick w-50 float-right">
+                            <br class="float-none">
+                            <h6 class="mt-3">Bag Total: &euro;{{ total|floatformat:2 }}</h6>
+                            <p class="mt-2 mb-0 font-weight-light">Delivery: &euro;{{ delivery|floatformat:2 }}</p>
+
+                            <!-- Member discount needs to be expanded in views -->
+                            <p class="mt-0 font-weight-light">Member Discount: &euro;{{ delivery|floatformat:2 }}</p>
+
+                            <h6 class="mt-4 lead font-weight-bold">Grand Total: &euro;{{ grand_total|floatformat:2 }}</h6>
+                            <p class="mb-1 text-light small pt-5 font-weight-light">
+                                Remember! Free delivery for orders over <strong>&euro;{{ free_delivery_threshold }}</strong>
+                            </p>
+                            <p class="mb-1 text-danger small">
+                                You could get free delivery by spending just <strong>&euro;{{ free_delivery_delta }}</strong> more!
+                            </p>
+
+                            <!-- {% if free_delivery_delta > 0 %}
+                                <p class="mb-1 text-danger">
+                                    You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                </p>
+                            {% endif %} -->
+                        </td>
+                    </tr>
+
+                    <!-- Checkout / Keep shopping -->
+                    <tr class="mr-5">
+                        <td colspan="5" class="text-right text-light">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="btn btn-outline-light button-white-outline rounded text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="" class="btn btn-full-white rounded-0 btn-lg">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
         {% else %}
+
+        <!-- Empty bag -->
         <div class="row justify-content-center">
             <div class="col-11 text-center">
                 <p class="text-light my-3">Your bag is currently empty.</p>

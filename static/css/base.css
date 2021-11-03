@@ -260,6 +260,10 @@ footer a:hover {
     border-top: 1px solid #bbb;
 }
 
+.hr-light-thick {
+    border-top: 3px solid #bbb;
+}
+
 .hr-dark {
     border-top: 1px solid #444;
 }
