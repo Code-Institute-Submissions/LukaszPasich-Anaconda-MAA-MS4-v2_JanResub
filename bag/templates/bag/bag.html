@@ -66,30 +66,31 @@
 
                             <h6 class="mt-4 lead font-weight-bold">Grand Total: &euro;{{ grand_total|floatformat:2 }}</h6>
                             <p class="mb-1 text-light small pt-5 font-weight-light">
-                                Remember! Free delivery for orders over <strong>&euro;{{ free_delivery_threshold }}</strong>
+                                Remember! Free delivery for orders over &euro;{{ free_delivery_threshold }}
                             </p>
-                            <p class="mb-1 text-danger small">
-                                You could get free delivery by spending just <strong>&euro;{{ free_delivery_delta }}</strong> more!
+                            <p class="mb-1 text-light small font-weight-light">
+                                ... and 10% off for Academy members!
                             </p>
 
-                            <!-- {% if free_delivery_delta > 0 %}
-                                <p class="mb-1 text-danger">
+                            {% if free_delivery_delta > 0 %}
+                                <p class="mb-4 text-danger small">
                                     You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
                                 </p>
-                            {% endif %} -->
+                            {% endif %}
+
                         </td>
                     </tr>
 
                     <!-- Checkout / Keep shopping -->
                     <tr class="mr-5">
                         <td colspan="5" class="text-right text-light">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                            <a href="{% url 'products' %}" class="btn btn-outline-light button-white-outline rounded my-2">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
-                                <span class="btn btn-outline-light button-white-outline rounded text-uppercase">Keep Shopping</span>
+                                <span class="text-uppercase px-2">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-full-white rounded-0 btn-lg">
+                            <a href="" class="btn btn-full-white rounded ml-2 my-2">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
