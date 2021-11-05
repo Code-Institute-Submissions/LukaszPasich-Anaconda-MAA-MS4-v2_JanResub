@@ -164,6 +164,7 @@ h5 {
 .btn-full-black {
     background-color: #000;
     color: #f8f9fa;
+    padding: 0px;
 }
 
 .btn-full-black-disabled,
@@ -194,6 +195,11 @@ h5 {
 .text-hover-white:hover {
     color: #fff;
 }
+
+.h-90 {
+    height: 90%;
+}
+
 /* Underline From Center - the code below has been copied from Hover.css website (https://ianlunn.github.io/Hover/#effects) */
 
 .hvr-underline-from-center {
@@ -296,6 +302,13 @@ footer a:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+/* OVERRIDE BOOTSTRAP CLASSES */
+
+.btn-sm {
+    padding-bottom: 0px !important;
+    padding-top: 0px !important;
 }
 
 /* MEDIA QUERIES */
