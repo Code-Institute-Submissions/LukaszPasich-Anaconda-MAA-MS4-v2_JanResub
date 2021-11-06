@@ -304,13 +304,6 @@ footer a:hover {
     cursor: pointer;
 }
 
-/* OVERRIDE BOOTSTRAP CLASSES */
-
-.btn-sm {
-    padding-bottom: 0px !important;
-    padding-top: 0px !important;
-}
-
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) {

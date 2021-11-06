@@ -55,7 +55,7 @@
                                         <div class="col-12 col-sm-9 col-md-8 col-lg-7 input-group">
                                             <!-- "-"" -->
                                             <div class="input-group-prepend">
-                                                <button class="decrement-qty btn btn-full-black rounded px-1 mx-1 h-90"
+                                                <button class="decrement-qty btn btn-full-black rounded px-1 mx-1"
                                                     data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                     <span>
                                                         <i class="fas fa-minus fa-sm"></i>
@@ -64,13 +64,13 @@
                                             </div>
 
                                             <!-- "quantity"" -->
-                                            <input class="form-control form-control-sm qty_input rounded px-3" type="number"
+                                            <input class="form-control form-control-sm qty_input rounded px-3 py-0" type="number"
                                                 name="quantity" value="{{ item.quantity }}" min="1" max="99"
                                                 data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
 
                                             <!-- "+"" -->
                                             <div class="input-group-append">
-                                                <button class="increment-qty btn btn-sm btn-full-black rounded px-1 mx-1 h-90"
+                                                <button class="increment-qty btn btn-sm btn-full-black rounded px-1 mx-1"
                                                     data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                     <span>
                                                         <i class="fas fa-plus fa-sm"></i>
@@ -83,8 +83,13 @@
 
                                 </form>
 
-                                <a href="" class="update-link text-light"><small>Update</small></a>
-                                <a href="" class="update-link text-danger"><small>Delete</small></a>
+                                <!-- Update & Remove buttons -->
+                                <div class="row">
+                                    <div class="col-12 col-sm-9 col-md-8 col-lg-7">
+                                        <a class="update-link text-light text-decoration-none"><small>Update</small></a>
+                                        <a class="remove-item text-danger float-right text-decoration-none" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                    </div>
+                                </div>
 
                             </td>
                             <td class="py-3">
@@ -105,10 +110,10 @@
                             <p class="mt-0 font-weight-light">Member Discount: &euro;{{ delivery|floatformat:2 }}</p>
 
                             <h6 class="mt-4 lead font-weight-bold">Grand Total: &euro;{{ grand_total|floatformat:2 }}</h6>
-                            <p class="mb-1 text-light small pt-5 font-weight-light">
+                            <p class="mb-1 text-lred small pt-5 font-weight-light">
                                 Remember! Free delivery for orders over &euro;{{ free_delivery_threshold }}
                             </p>
-                            <p class="mb-1 text-light small font-weight-light">
+                            <p class="mb-1 text-lred small font-weight-light">
                                 ... and 10% off for Academy members!
                             </p>
 
@@ -167,4 +172,32 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
+
+<script>
+    // Update quantity on click
+    $('.update-link').click(function (e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove item and reload on click
+    $('.remove-item').click(function (e) {
+        // var csrfToken = "{{ csrf_token }}"
+        var itemId = $(this).attr('id').split('remove_')[1];
+        // var size = $(this).data('product_size');
+        var url = `/bag/remove/${itemId}/`;
+        // var data = {
+        //     'csrfmiddlewaretoken': csrfToken,
+        //     'product_size': size
+        // }
+
+
+        // $.post(url, data)
+        $.post(url)
+            .done(function () {
+                location.reload();
+            });
+    })
+</script>
+
 {% endblock %}
