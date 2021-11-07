@@ -309,7 +309,7 @@ footer a:hover {
 
 .message-container {
     position: fixed;
-    top: 90px;
+    top: 140px;
     right: 15px;
     z-index: 999999;
 }
