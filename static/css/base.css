@@ -329,10 +329,6 @@ footer a:hover {
     overflow: visible; 
 }
 
-.toast-capper {
-    height: 3px;
-}
-
 .bag-notification-wrapper {
     height: 100px;
     overflow-x: hidden;
