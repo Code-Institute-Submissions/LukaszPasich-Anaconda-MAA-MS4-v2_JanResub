@@ -319,6 +319,7 @@ footer a:hover {
 
 .message-container {
     position: fixed;
+    max-width: 300px;
     top: 140px;
     right: 15px;
     z-index: 999999;
@@ -332,6 +333,11 @@ footer a:hover {
     height: 3px;
 }
 
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 /* MEDIA QUERIES */
 
