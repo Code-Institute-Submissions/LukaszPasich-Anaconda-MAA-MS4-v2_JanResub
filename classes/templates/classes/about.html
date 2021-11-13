@@ -19,23 +19,69 @@
 </div>
 
 <!-- about academy -->
-<section class="container-fluid about-banner">
-    <div class="row justify-content-center py-5">
-        <div class="col-11 col-sm-10 col-lg-6 text-light ">
-            <h4 class="pt-5 pb-3 text-center">About Anaconda Martial Arts Academy</h3>
-            <p class="text-center pt-4 pb-2 font-weight-light">
-                Anaconda MAA is a well-established martial arts academy that has been growing considerably since 2012.
-                In our club we teach discipline, mental toughness and selflessness, alongside top level jiu-jitsu, kickboxing and boxing.
-                Our goal is to create a confident, winning character both on and off the mat.
-            </p>
-            <p class="text-center pt-2 pb-4 font-weight-light">
-                Our coaches are driven by a passion for martial arts.
-                One of the most positive environments you will ever be in,
-                the club is filled with friendly people that constantly try to improve themselves and work hard to reach their goals.
-            </p>
-        </div>
+<div class="row justify-content-center py-5 about-banner" id="about-anaconda">
+    <div class="col-11 col-sm-10 col-lg-6 text-light ">
+        <h4 class="pt-5 pb-3 text-center">About Anaconda Martial Arts Academy</h3>
+        <p class="text-center pt-4 pb-2 font-weight-light">
+            Anaconda MAA is a well-established martial arts academy that has been growing considerably since 2012.
+            In our club we teach discipline, mental toughness and selflessness, alongside top level jiu-jitsu, kickboxing and boxing.
+            Our goal is to create a confident, winning character both on and off the mat.
+        </p>
+        <p class="text-center pt-2 pb-4 font-weight-light">
+            Our coaches are driven by a passion for martial arts.
+            One of the most positive environments you will ever be in,
+            the club is filled with friendly people that constantly try to improve themselves and work hard to reach their goals.
+        </p>
     </div>
-</section>
+</div>
 
-<!-- main content -->
+
+<!-- about bjj -->
+<div class="row justify-content-center py-5 bg-ddgrey text-light" id="about-bjj">
+    <div class="col-11 col-xs-10 col-md-8 col-xl-5">
+        <img src="{% static 'images/about-bjj-image.jpg' %}" alt="Brazilian Jiu-Jitsu image" class="about-img py-5">
+    </div>
+    <div class="col-11 col-xs-10 col-md-8 col-xl-5 col-xxl-4 pt-5">
+        <h4 class="pb-4">Why Brazilian Jiu-Jitsu?</h4>
+        <p class="font-weight-light py-1">
+            Brazilian jiu-jitsu is a martial art, combat sport system that focuses on grappling and especially ground
+            fighting.
+            BJJ promotes the concept that a smaller, weaker person can successfully defend against a bigger, stronger,
+            heavier assailant by using proper technique,
+            leverage, and most notably, taking the fight to the ground, and then applying joint-locks and choke holds to
+            defeat the opponent.
+        </p>
+        <p class="font-weight-light py-1">
+            BJJ training can be used for sport grappling tournaments. However it can be used in some self-defence
+            situations and does serve its purpose.
+            Sparring (commonly referred to as rolling) and live drilling play a major role in training, and a premium is
+            placed on performance, especially in competition,
+            in relation to progress and ascension through its ranking system.
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-auto pt-2 pb-5">
+                <a href="{% url 'about' %}" class="text-lred read-more text-decoration-none">About our coaches…</a>
+            </div>
+        </div>
+
+        <!-- join academy button -->
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <h6>Get in touch to book a free trial class!</h6>
+                            <a href="{% url 'memberships' %}" class="d-block button-join text-center bg-dred py-3 my-4 text-decoration-none text-uppercase rounded mx-auto">
+                                Join Our Academy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 {% endblock %}

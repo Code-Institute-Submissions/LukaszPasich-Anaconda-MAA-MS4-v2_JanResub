@@ -14,3 +14,20 @@
 	-o-background-size: cover;
     background-size: cover;
 }
+
+.about-img {
+	width: 95%;
+}
+
+.read-more:hover {
+    color: #fff;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 576px) {
+	.header-about-banner {
+        height: 400px;
+    }
+}
