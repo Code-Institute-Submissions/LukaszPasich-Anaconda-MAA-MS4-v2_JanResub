@@ -38,9 +38,13 @@
 
 <!-- about bjj -->
 <div class="row justify-content-center py-5 bg-ddgrey text-light" id="about-bjj">
-    <div class="col-11 col-xs-10 col-md-8 col-xl-5">
+
+    <!-- image -->
+    <div class="col-11 col-md-8 col-xl-5">
         <img src="{% static 'images/about-bjj-image.jpg' %}" alt="Brazilian Jiu-Jitsu image" class="about-img py-5">
     </div>
+
+    <!-- description -->
     <div class="col-11 col-xs-10 col-md-8 col-xl-5 col-xxl-4 pt-5">
         <h4 class="pb-4">Why Brazilian Jiu-Jitsu?</h4>
         <p class="font-weight-light py-1">
@@ -71,7 +75,7 @@
                 <div>
                     <div class="row justify-content-center">
                         <div class="col-auto">
-                            <h6>Get in touch to book a free trial class!</h6>
+                            <h6 class="lead">Get in touch to book a free trial class!</h6>
                             <a href="{% url 'memberships' %}" class="d-block button-join text-center bg-dred py-3 my-4 text-decoration-none text-uppercase rounded mx-auto">
                                 Join Our Academy
                             </a>
@@ -83,5 +87,102 @@
 
     </div>
 </div>
+
+<!-- about kickboxing -->
+<div class="row justify-content-center py-5 bg-ddgrey text-light" id="about-kb">
+    
+    <!-- description -->
+    <div class="col-11 col-md-8 col-xl-5 col-xxl-4 pt-5 order-2 order-xl-1">
+        <h4 class="pb-4">Why Kickboxing?</h4>
+        <p class="font-weight-light py-1">
+            Kickboxing is a stand-up combat sport that is a mix of Karate, Muay Thai and Western Boxing.
+            It combines powerful kicks from Karate and agile handwork from boxing and is practiced as for fitness, self-defence and also as a contact sport.
+        </p>
+        <p class="font-weight-light py-1">
+            Kickboxing offers a great cardio workout, improved strength, an opportunity to socialise, core training, increased weight loss, improved balance and stress reduction.
+            Because kickboxing uses every major muscle group in the body, the demand on the cardiovascular system is increased.
+            As a result, 30 to 60 minutes of kickboxing three or more times per week may be all a member needs to improve cardiovascular fitness.
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-auto pt-2 pb-5">
+                <a href="{% url 'about' %}" class="text-lred read-more text-decoration-none">About our coaches…</a>
+            </div>
+        </div>
+
+        <!-- join academy button -->
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <h6 class="lead">Get in touch to book a free trial class!</h6>
+                            <a href="{% url 'memberships' %}" class="d-block button-join text-center bg-dred py-3 my-4 text-decoration-none text-uppercase rounded mx-auto">
+                                Join Our Academy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- image - moves to first position on screens < 1200px -->
+    <div class="col-11 col-xs-10 col-md-8 col-xl-5 order-1 order-xl-2">
+        <img src="{% static 'images/about-kickboxing-image.jpg' %}" alt="Brazilian Jiu-Jitsu image" class="about-img py-5">
+    </div>
+
+</div>
+
+<!-- about boxing -->
+<div class="row justify-content-center py-5 bg-ddgrey text-light" id="about-b">
+
+    <!-- image -->
+    <div class="col-11 col-md-8 col-xl-5">
+        <img src="{% static 'images/about-boxing-image.jpg' %}" alt="Brazilian Jiu-Jitsu image" class="about-img py-5">
+    </div>
+
+    <!-- description -->
+    <div class="col-11 col-xs-10 col-md-8 col-xl-5 col-xxl-4 pt-5">
+        <h4 class="pb-4">Why Boxing?</h4>
+        <p class="font-weight-light py-1">
+            Boxing is an intense aerobic and anaerobic workout that pushes the body to its physical limits.
+            In just a few sessions, boxing can make you stronger, faster, sharper, and help you start the journey of getting in the best shape of your life.
+            But boxing would never be effective as a workout if it weren’t so enjoyable and  engaging.
+        </p>
+        <p class="font-weight-light py-1">
+            One of the biggest reasons why boxing is such an addictive martial art to train and practice is because it is an incredibly technical discipline.
+            Picking it up is easy enough, but mastering it takes a lot of work and dedication. For this reason, practitioners are on a constant path of learning.
+            Boxing is also one of the most potent self-defense disciplines to use in the real world.
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-auto pt-2 pb-5">
+                <a href="{% url 'about' %}" class="text-lred read-more text-decoration-none">About our coaches…</a>
+            </div>
+        </div>
+
+        <!-- join academy button -->
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <h6 class="lead">Get in touch to book a free trial class!</h6>
+                            <a href="{% url 'memberships' %}" class="d-block button-join text-center bg-dred py-3 my-4 text-decoration-none text-uppercase rounded mx-auto">
+                                Join Our Academy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
 
 {% endblock %}
