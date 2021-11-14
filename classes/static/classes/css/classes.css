@@ -23,11 +23,64 @@
     color: #fff;
 }
 
+.coaches-bio {
+    max-width: 390px;
+	font-weight: 300;
+    text-align: center;
+}
+
+.coaches-name {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.coaches-discipline {
+    color: #f7243c;
+    font-weight: 400;
+}
+
+.coaches-discipline:hover {
+    color: #f79a8b;
+	text-decoration: none;
+}
+
+/* - Zoom effect on hover over coaches images - the code below taken from www.w3bits.com website (https://w3bits.com/css-image-hover-zoom/) */
+
+.img-hover-zoom {
+	max-height: 390px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 7px solid #333;
+  }
+  
+  .img-hover-zoom img {
+	  transition: transform .5s ease;
+	  -webkit-transition: transform 1s ease;
+	  -moz-transition: transform 1s ease;
+	  -o-transition: transform 1s ease;
+  }
+  
+  .img-hover-zoom:hover img {
+	transform: scale(1.05);
+  }
+
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 576px) {
 	.header-about-banner {
         height: 400px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .coaches-image,
+    .img-hover-zoom {
+        width: 100%;
+        height: auto;
+    }
+    .img-hover-zoom:hover img {
+  transform: scale(1);
     }
 }

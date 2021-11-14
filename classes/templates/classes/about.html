@@ -65,7 +65,7 @@
 
         <div class="row justify-content-center">
             <div class="col-auto pt-2 pb-5">
-                <a href="{% url 'about' %}" class="text-lred read-more text-decoration-none">About our coaches…</a>
+                <a href="about#coaches" class="text-lred read-more text-decoration-none">About our coaches…</a>
             </div>
         </div>
 
@@ -106,7 +106,7 @@
 
         <div class="row justify-content-center">
             <div class="col-auto pt-2 pb-5">
-                <a href="{% url 'about' %}" class="text-lred read-more text-decoration-none">About our coaches…</a>
+                <a href="about#coaches" class="text-lred read-more text-decoration-none">About our coaches…</a>
             </div>
         </div>
 
@@ -159,7 +159,7 @@
 
         <div class="row justify-content-center">
             <div class="col-auto pt-2 pb-5">
-                <a href="{% url 'about' %}" class="text-lred read-more text-decoration-none">About our coaches…</a>
+                <a href="about#coaches" class="text-lred read-more text-decoration-none">About our coaches…</a>
             </div>
         </div>
 
@@ -186,20 +186,19 @@
 <!-- coaches -->
 <div class="row justify-content-center bg-dgrey text-light py-5" id="coaches">
 
-    <h4 class="py-5 mt-5">Meet Our Instructors</h4>
+    <h4 class="col-12 py-5 my-5">Meet Our Instructors</h4>
 
-    <!-- Coach 1 -->
-    <div class="col-auto pt-5">
+    <!-- coach bjj -->
+    <div class="col-auto px-5">
+
         <div class="img-hover-zoom">
-            <img class="coaches-image" src="{% static 'images/about-bjjcoach-image.jpg' %}"
-                alt="Brazilian Jiu-Jitsu Instructor">
+            <img class="coaches-image" src="{% static 'images/about-bjjcoach-image.jpg' %}" alt="Brazilian Jiu-Jitsu Instructor">
         </div>
 
-        <div class="coaches-bio">
-            <p class="coaches-name padding-top-fifty">Joao Oliveira</p>
-            <a href="about#about-bjj" class="coaches-discipline padding-bottom-fifty read-more">Brazilian
-                Jiu-Jitsu</a>
-            <p class="coaches-info padding-top-twentyfive">
+        <div class="coaches-bio pb-5 mb-5">
+            <p class="coaches-name pt-5">Joao Oliveira</p>
+            <a href="about#about-bjj" class="coaches-discipline read-more">Brazilian Jiu-Jitsu</a>
+            <p class="coaches-info py-4">
                 Training full time since 2010 Joao has earned a brown belt in Brazilian Jiu-Jitsu.
                 He has competed in Kickboxing , BJJ, Wrestling and MMA both at local and International level winning
                 National and International titles along the way.
@@ -207,23 +206,22 @@
                 Business Management while receiving a scholarship for Brazilian Jiu-Jitsu,
                 one of two people in the country to do so to date.
             </p>
-            <br>
-            <a href="about#about-bjj" class="color-light-red read-more"> About Brazilian Jiu-Jitsu…</a>
+            <a href="about#about-bjj" class="text-lred read-more text-decoration-none pb-5 mb-5"> About Brazilian Jiu-Jitsu…</a>
         </div>
+
     </div>
 
-    <!-- Coach 2 -->
-    <div class="col-auto padding-top-fifty">
+    <!-- coach kb -->
+    <div class="col-auto px-5">
+
         <div class="img-hover-zoom">
-            <img class="coaches-image" src="{% static 'images/about-kickboxingcoach-image.jpg' %}"
-                alt="Brazilian Jiu-Jitsu Instructor">
+            <img class="coaches-image" src="{% static 'images/about-kickboxingcoach-image.jpg' %}" alt="Kickboxing Instructor">
         </div>
 
-        <div class="coaches-bio">
-            <p class="coaches-name padding-top-fifty">Roisin Murphy</p>
-            <a href="about.html#about-kickboxing"
-                class="coaches-discipline padding-bottom-fifty read-more">Kickboxing</a>
-            <p class="coaches-info padding-top-twentyfive">
+        <div class="coaches-bio pb-5 mb-5">
+            <p class="coaches-name pt-5">Roisin Murphy</p>
+            <a href="about#about-kb" class="coaches-discipline read-more">Kickboxing</a>
+            <p class="coaches-info py-4">
                 Roisin has almost 9 years of martial arts training in multiple martial arts including Judo, Kickboxing,
                 and MMA.
                 She has a Bachelor Degree in Physical Education awarded by UCD. She has been training at Anaconda for 6
@@ -231,34 +229,32 @@
                 She has competed in many tournaments across the world and she is an WKF certified Referee and Refereed
                 at multiple Kickboxing events across the country.
             </p>
-            <br>
-            <a href="about.html#about-kickboxing" class="color-light-red read-more padding-bottom-fifty"> About
-                Kickboxing…</a>
+            <a href="about#about-kb" class="text-lred read-more text-decoration-none pb-5 mb-5"> About Kickboxing…</a>
         </div>
+
     </div>
 
-    <!-- Coach 3 -->
-    <div class="col-auto padding-top-fifty">
+    <!-- coach b -->
+    <div class="col-auto px-5">
+
         <div class="img-hover-zoom">
-            <img class="coaches-image" src="{% static 'images/about-boxingcoach-image.jpg' %}"
-                alt="Brazilian Jiu-Jitsu Instructor">
+            <img class="coaches-image" src="{% static 'images/about-boxingcoach-image.jpg' %}" alt="Boxing Instructor">
         </div>
 
-        <div class="coaches-bio">
-            <p class="coaches-name padding-top-fifty">Arslan Johnston</p>
-            <a href="about.html#about-boxing" class="coaches-discipline padding-bottom-fifty read-more">Boxing</a>
-            <p class="coaches-info padding-top-twentyfive">
+        <div class="coaches-bio pb-5 mb-5">
+            <p class="coaches-name pt-5">Arslan Johnston</p>
+            <a href="about#about-b" class="coaches-discipline padding-bottom-fifty read-more">Boxing</a>
+            <p class="coaches-info py-4">
                 Arslan has over 10 years Boxing experience in both competition and coaching. He is an active competitor
                 and has multiple National and International medals.
                 Most notable being his 2018 European Gold Medal that he won in Lisbon. As one of co-founders of Anaconda
                 academy Arslan has been instrumental in creating the school’s Boxing curriculum
                 and he has coached many National and European level Contenders and two National level Champions.
             </p>
-            <br>
-            <a href="about.html#about-boxing" class="color-light-red read-more padding-bottom-fifty"> About Boxing…</a>
+            <a href="about#about-b" class="text-lred read-more text-decoration-none"> About Boxing…</a>
         </div>
+
     </div>
-    <!-- /Coach 3 -->
 
 </div>
 
