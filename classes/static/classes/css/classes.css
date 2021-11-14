@@ -15,6 +15,15 @@
     background-size: cover;
 }
 
+.header-classes-banner {
+	background: url('/static/images/classes-main-banner.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+}
+
 .about-img {
 	width: 95%;
 }
@@ -65,11 +74,44 @@
 	transform: scale(1.05);
   }
 
+.classes-levels {
+    color: #fff;
+    text-align: center;
+    background-color: #9f1323;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.opacity-30 {
+    opacity: .30;
+}
+
+.read-more-dark:hover {
+    color: #f7243c;
+}
+
 
 /* MEDIA QUERIES */
 
+@media screen and (min-width: 1201px) {
+    .rwd-kidsclassesimage-phonetablet,
+    .rwd-kickboxingimage-phonetablet {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+    .rwd-kidsclassesimage-desktop,
+    .rwd-kickboxingimage-desktop {
+		display: none;
+    }
+}
+
 @media screen and (max-width: 576px) {
-	.header-about-banner {
+	.header-about-banner,
+    .header-classes-banner {
         height: 400px;
     }
 }

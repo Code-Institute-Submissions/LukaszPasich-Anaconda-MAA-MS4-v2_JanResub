@@ -8,7 +8,7 @@
 
 {% block content %}
 <!-- main banner -->
-<div class="row header-about-banner justify-content-center">
+<div class="row header-classes-banner justify-content-center">
     <div class="col-12">
         <div> 
             <h1 class="row justify-content-center pb-5 mb-5">
@@ -18,20 +18,74 @@
     </div>
 </div>
 
-<!-- about academy -->
-<div class="row justify-content-center py-5 about-banner" id="about-anaconda">
-    <div class="col-11 col-sm-10 col-lg-6 text-light ">
-        <h4 class="pt-5 pb-3 text-center">About Anaconda Martial Arts Academy</h3>
-        <p class="text-center pt-4 pb-2 font-weight-light">
-            Anaconda MAA is a well-established martial arts academy that has been growing considerably since 2012.
-            In our club we teach discipline, mental toughness and selflessness, alongside top level jiu-jitsu, kickboxing and boxing.
-            Our goal is to create a confident, winning character both on and off the mat.
+<!-- kids & teens classes -->
+<div class="row justify-content-center py-5 bg-llgrey">
+
+    <div class="col-11 col-md-9 pb-5 rwd-kidsclassesimage-phonetablet">
+        <img src="{% static 'images/classes-kids&teens-image.jpg' %}" alt="Kids' martial arts classes" style="width: 100%;">
+    </div>
+
+    <div class="col-11 col-xs-10 col-md-8 col-xl-4 pb-5 rwd-kidsclassesimage-desktop">
+        <img src="{% static 'images/classes-kids&teens-image.jpg' %}" alt="Kids' martial arts classes" style="width: 95%;">
+    </div>
+
+    <div class="col-11 col-md-9 col-xl-6 py-2">
+        <h4 class="text-dark py-3">Kids & Teens Classes</h4>
+        <p class="text-dark">
+            <span class="text-uppercase font-weight-bold">Kids 4-8 years</span><br>
+            This is the very first course your children will start with.
+            In this class our only main focus is to build self-esteem, a sense of respect for rules and on the technical point of view
+            teaching drills and fun games to starts working on coordination and basic techniques for further development.
         </p>
-        <p class="text-center pt-2 pb-4 font-weight-light">
-            Our coaches are driven by a passion for martial arts.
-            One of the most positive environments you will ever be in,
-            the club is filled with friendly people that constantly try to improve themselves and work hard to reach their goals.
+        <p class="text-dark">
+            <span class="text-uppercase font-weight-bold">Kids 8+ years</span><br>
+            This program’s focus is to develop and sharpen skills from fundamentals to more advanced skill sets.
         </p>
+        
+        <!-- classes diagram -->
+        <div class="row justify-content-center pt-4">
+            <div class="col-9 col-md-2 text-center">BJJ</div>
+            <div class="col-9 col-md-3 classes-levels rounded">4-8 years</div>
+            <div class="col-9 col-md-3 classes-levels rounded">8-12 years</div>
+            <div class="col-9 col-md-3 classes-levels rounded">12+ years</div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-9 col-md-2 p-1 text-center">Kickboxing</div>
+            <div class="col-9 col-md-3 classes-levels rounded opacity-30">4-8 years</div>
+            <div class="col-9 col-md-3 classes-levels rounded">8-12 years</div>
+            <div class="col-9 col-md-3 classes-levels rounded">12+ years</div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-9 col-md-2 p-1 text-center">Boxing</div>
+            <div class="col-9 col-md-3 classes-levels rounded opacity-30">4-8 years</div>
+            <div class="col-9 col-md-3 classes-levels rounded">8-12 years</div>
+            <div class="col-9 col-md-3 classes-levels rounded">12+ years</div>
+        </div>
+
+        <div class="row justify-content-center py-5">
+            <div class="col-auto">
+                <a href="times#times" class="text-dred read-more-dark text-decoration-none">See timetable…</a>
+            </div>
+        </div>
+
+        <!-- join academy button -->
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <h6 class="text-dark font-weight-normal lead">Get in touch to book a free trial class!</h6>
+                            <a href="{% url 'memberships' %}" class="d-block button-join text-center bg-dred py-3 my-4 text-decoration-none text-uppercase rounded mx-auto">
+                                Join Our Academy
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
