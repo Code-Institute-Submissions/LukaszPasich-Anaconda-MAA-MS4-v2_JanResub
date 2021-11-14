@@ -18,7 +18,8 @@ class Discipline(models.Model):
 class Membership(models.Model):
     """ Model for Memberships"""
 
-    discipline = models.ForeignKey('Discipline', null=True, blank=True, on_delete=models.SET_NULL)
+    discipline = models.ForeignKey('Discipline', null=True, blank=True,
+                                   on_delete=models.SET_NULL)
     membership_no = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=32)
     small_name = models.CharField(max_length=32, null=True, blank=True)
