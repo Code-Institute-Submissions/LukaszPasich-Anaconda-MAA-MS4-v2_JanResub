@@ -1,0 +1,25 @@
+.header-contact-banner {
+	background: url('/static/images/contact-page-main-banner.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 700px;
+}
+
+.about-banner {
+    background: url('/static/images/about-boxingbag-image.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+    background-size: cover;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 576px) {
+    .header-contact-banner {
+        height: 400px;
+    }
+}
