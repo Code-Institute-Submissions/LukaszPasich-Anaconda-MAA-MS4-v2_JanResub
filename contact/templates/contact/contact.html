@@ -24,9 +24,32 @@
 
         <div class="row justify-content-center py-5">
             <h4 class="col-12 text-dark pt-5">Get in touch with us</h4>
+            <hr class="col-10">
+
+            <div class="col-12 col-lg-6">
+                <p class="pt-1 text-center">
+                    If you wish to book your <strong>free trial class</strong> leave your details below and we will get in touch with you.
+                </p>
+                <form action="#" class="py-1">
+                    <div class="row py-1">
+                        <label for="name" class="col-12 input-label">Name &ast;</label><br>
+                        <input id="name" class="col-12 input-label" type="text" placeholder="..." required>
+                        <label for="email" class="input-label">E-mail &ast;</label>
+                        <input id="email" type="email" placeholder="..." required>
+                        <label for="phone" class="input-label">Phone</label>
+                        <input id="phone" type="text" placeholder="...">
+                        <label for="message" class="input-label">Message &ast;</label><br>
+                        <textarea id="message" placeholder="..." required></textarea>
+                        <input type="submit" value="submit" class="btn-getstarted-red submit-button">
+                    </div>
+
+                </form>
+            </div>
         </div>
-    
+
     </div>
+
+
 </div>
 
 {% endblock %}
