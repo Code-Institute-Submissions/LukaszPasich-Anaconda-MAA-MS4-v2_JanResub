@@ -34,12 +34,16 @@ def all_products(request):
 
         if 'q' in request.GET:
             query = request.GET['q']
+
             if not query:
                 messages.error(request, "No search criteria entered!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+
+            if len(products) == 0:
+                messages.error(request, "No products found for the search criteria entered!")
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
