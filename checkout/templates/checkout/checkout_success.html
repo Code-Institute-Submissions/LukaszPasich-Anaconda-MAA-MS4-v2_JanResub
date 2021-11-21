@@ -18,10 +18,37 @@
 <!-- order confirmatiom -->
 <div class="row justify-content-center bg-dgrey py-3 text-light">
     <div class="col-11 col-lg-10">
-        <hr class="hr-dark">
+        <p class="text-muted text-uppercase pt-3 lead">Order Summary</p>
+        <hr class="hr-dark py-0">
+
+        <!-- order number and date -->
+        <div class="row justify-content-center pb-1">
+            <div class="col-12">
+                <small class="text-muted">Order Info:</small>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <p class="mb-0 font-weight-light">Order Number:</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <p class="mb-0">{{ order.order_number }}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <p class="mb-0 font-weight-light">Order Date:</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <p class="mb-0">{{ order.date }}</p>
+            </div>
+        </div>
 
         <!-- order details -->
-        <div class="row justify-content-center pt-3 pb-1">
+        <hr class="hr-dark pt-1">
+        <div class="row justify-content-center py-1">
             <div class="col-12">
                 <small class="text-muted">Order Details:</small>
             </div>
@@ -41,9 +68,19 @@
         {% endfor %}
 
         <!-- delivering to -->
-        <div class="row pt-3 pb-1">
+        <hr class="hr-dark pt-1">
+        <div class="row py-1">
             <div class="col-12 col-sm-6 col-md-5 col-lg-4">
                 <small class="text-muted">Delivering to:</small>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <p class="mb-0 font-weight-light">Phone number</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <p class="mb-0">{{ order.phone_number }}</p>
             </div>
         </div>
 
@@ -76,6 +113,15 @@
         </div>
         {% endif %}
 
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <p class="mb-0 font-weight-light">Town or City</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
+                <p class="mb-0">{{ order.town_or_city }}</p>
+            </div>
+        </div>
+
         {% if order.county %}
         <div class="row">
             <div class="col-12 col-sm-6 col-md-5 col-lg-4">
@@ -86,15 +132,6 @@
             </div>
         </div>
         {% endif %}
-
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
-                <p class="mb-0 font-weight-light">Town or City</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
-                <p class="mb-0">{{ order.town_or_city }}</p>
-            </div>
-        </div>
 
         {% if order.postcode %}
         <div class="row">
@@ -116,17 +153,9 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
-                <p class="mb-0 font-weight-light">Phone number</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-5 col-lg-4">
-                <p class="mb-0">{{ order.phone_number }}</p>
-            </div>
-        </div>
-
         <!-- billing info -->
-        <div class="row justify-content-center pt-3 pb-1">
+        <hr class="hr-dark pt-1">
+        <div class="row justify-content-center py-1">
             <div class="col-12">
                 <small class="text-muted">Billing Info:</small>
             </div>
@@ -164,8 +193,15 @@
 </div>
 
 <!-- back to shopping button -->
-<div class="row justify-content-center bg-dgrey pt-3">
-
+<div class="row bg-dgrey justify-content-center pt-2 pb-5">
+    <div class="col-11 col-lg-10">
+        <a href="{% url 'products' %}" class="btn button-white-outline border border-light rounded mb-5">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Back to Shop</span>
+        </a>
+    </div>
 </div>
 
 {% endblock %}
