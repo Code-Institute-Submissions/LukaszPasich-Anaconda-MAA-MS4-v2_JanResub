@@ -156,14 +156,14 @@ h5 {
 }
 
 .button-white-outline {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #f8f9fa;
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    color: #f8f9fa !important;
 }
 
 .button-white-outline:hover {
-    color: #222;
-    background-color: #fff;
+    color: #222 !important;
+    background-color: #fff !important;
 }
 
 .btn-full-black {
@@ -179,14 +179,14 @@ h5 {
 }
 
 .btn-full-white {
-    font-weight: 800;
-    background-color: #ccc;
-    color: #222;
+    font-weight: 800 !important;
+    background-color: #ccc !important;
+    color: #222 !important;
 }
 
 .btn-full-white:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #fff !important;
+    color: #000 !important;
 }
 
 .text-1half-rem {
