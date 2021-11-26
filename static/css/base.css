@@ -110,6 +110,11 @@ h5 {
     color: #111;
 }
 
+.text-white-hover:hover {
+    text-decoration: none;
+    color: fff !important;
+}
+
 .minh-300px {
     min-height: 300px;
 }
@@ -190,6 +195,10 @@ h5 {
 
 .text-2rem {
     font-size: 2rem;
+}
+
+.text-hover-white {
+    color: #f79a8b;
 }
 
 .text-hover-white:hover {
@@ -304,6 +313,10 @@ footer a:hover {
     cursor: pointer;
 }
 
+input[name='q']::placeholder {
+    color: #aab7c4;
+}
+
 
 /* TOASTS */
 
@@ -334,6 +347,46 @@ footer a:hover {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* ALLAUTH FORMS */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #6c757d; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border-color: #000;
+    border-radius: 0;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
 
 /* MEDIA QUERIES */
 

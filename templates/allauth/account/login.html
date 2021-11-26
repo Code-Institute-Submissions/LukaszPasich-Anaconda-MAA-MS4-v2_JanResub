@@ -7,14 +7,19 @@
 
 {% block inner_content %}
 
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
-<hr>
+
+<div class="row row justify-content-center">
+  <div class="col-12">
+    <h2 class="">{% trans "Sign In" %}</h2>
+    <hr class="hr-light">
+  </div>
+</div>
+
 
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}
-<p>{% blocktrans with site.name as site_name %}Please sign in with one
+<p class="text-light">{% blocktrans with site.name as site_name %}Please sign in with one
 of your existing third party accounts. Or, <a href="{{ signup_url }}">sign up</a>
 for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 
@@ -31,7 +36,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 {% include "socialaccount/snippets/login_extra.html" %}
 
 {% else %}
-<p>{% blocktrans %}If you have not created an account yet, then please
+<p class="text-light">{% blocktrans %}If you have not created an account yet, then please
 <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
 
