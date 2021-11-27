@@ -195,12 +195,21 @@
 <!-- back to shopping button -->
 <div class="row bg-dgrey justify-content-center pt-2 pb-5">
     <div class="col-11 col-lg-10">
-        <a href="{% url 'products' %}" class="btn button-white-outline border border-light rounded mb-5">
-            <span class="icon">
-                <i class="fas fa-chevron-left pr-1"></i>
-            </span>
-            <span class="text-uppercase">Back to Shop</span>
-        </a>
+        {% if from_profile %}
+            <a href="{% url 'profile' %}" class="btn button-white-outline border border-light rounded mb-5">
+                <span class="icon">
+                    <i class="fas fa-chevron-left pr-1"></i>
+                </span>
+                <span class="text-uppercase">Back to Profile</span>
+            </a>
+        {% else %}
+            <a href="{% url 'products' %}" class="btn button-white-outline border border-light rounded mb-5">
+                <span class="icon">
+                    <i class="fas fa-chevron-left pr-1"></i>
+                </span>
+                <span class="text-uppercase">Back to Shop</span>
+            </a>
+        {% endif %}
     </div>
 </div>
 
