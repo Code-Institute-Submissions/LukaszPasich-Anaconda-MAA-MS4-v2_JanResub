@@ -74,6 +74,17 @@
             <p class="mt-3 text-light font-weight-light">{{ product.description }}</p>
 
             {% if request.user.is_superuser %}
+                <!-- buttons - edit & delete -->
+                <div class="row">
+                    {% if request.user.is_superuser %}
+                    <div class="col-11 text-right">
+                        <div class="ml-3">
+                            <a class="text-light mx-1 text-decoration-none border border-light rounded px-3 py-1" href="{% url 'edit_product' product.id %}">Edit</a>
+                            <a class="text-danger mx-1 text-decoration-none border border-danger rounded px-3 py-1" href="{% url 'delete_product' product.id %}">Delete</a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
             {% endif %}
 
             <!-- add product to the shopping bag form -->
