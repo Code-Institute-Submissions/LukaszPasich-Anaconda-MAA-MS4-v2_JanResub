@@ -1,0 +1,1 @@
+Anaconda MAA Confirmation of your purchase - Order Number: {{ order.order_number }}
