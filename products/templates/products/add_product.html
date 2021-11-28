@@ -13,8 +13,9 @@
 <!-- product form -->
 <div class="row justify-content-center bg-dgrey pt-3">
     <!-- form -->
-    <div class="col-10 col-sm-7 col-md-5 col-lg-4">
+    <div class="col-10 col-sm-7 col-md-6 col-lg-4">
         <form method="POST" action="{% url 'add_product' %}" class="form text-light small" enctype="multipart/form-data">
+
             {% csrf_token %}
             {% for field in form %}
                 {% if field.name != 'image' %}
