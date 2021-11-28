@@ -94,7 +94,7 @@
                             {{ membership.pay_interval }}
                         </p>
                         <div class="pt-3 pb-4">
-                            <a href="#" class="button-start-white py-3 px-4 mx-0 rounded text-uppercase text-decoration-none">Get Started</a>
+                            <a href="{% url 'contact' %}" class="button-start-white py-3 px-4 mx-0 rounded text-uppercase text-decoration-none">Get Started</a>
                         </div>
                         <p class="no-fee text-center text-uppercase mt-2 mb-0 text-ddgrey">- No joining fee -</p>
                     </div>
@@ -104,7 +104,7 @@
                 <div class="col-11 text-light text-center mt-0">
                     <p class="disclaimer mx-3">You can attend only classes in the chosen discipline (all disciplines in case of Unlimited membership) and only at your level or age group.</p>
                     <p class="disclaimer">See timetables
-                        <a href="#" class="d-inline text-lred">here</a>.
+                        <a href="{% url 'all_classes' %}" class="d-inline text-lred">here</a>.
                     </p>
                 </div>
 

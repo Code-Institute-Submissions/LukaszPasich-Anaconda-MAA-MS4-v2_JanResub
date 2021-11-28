@@ -26,9 +26,9 @@
 <section class="row justify-content-center bg-ddgrey pb-5">
     <h5 class="col-10 py-4 py-md-5">Anaconda MAA offers classes in a variety of disciplines</h5>
 
-    
+    <!-- bjj-->
     <div class="col-auto home-image-container pt-4">
-        <a href="#" class="home-image">
+        <a href="{% url 'about' %}" class="home-image">
             <img src="{% static 'images/home-page-bjj-image.jpg' %}" alt="Brazilian Jiu-Jitsu classes"> 
             <div class="image-overlay">
                 <img src="{% static 'images/home-page-bjj-icon.svg' %}" alt="Brazilian Jiu-Jitsu icon">
@@ -42,9 +42,9 @@
         </div>
     </div>
 
-
+    <!-- kickboxing -->
     <div class="col-auto home-image-container pt-4">
-        <a href="#" class="home-image">
+        <a href="{% url 'about' %}" class="home-image">
             <img src="{% static 'images/home-page-kickboxing-image.jpg' %}" alt="Kickboxing classes">
             <div class="image-overlay">
                 <img src="{% static 'images/home-page-kickboxing-icon.svg' %}" alt="Kickboxing icon">
@@ -58,8 +58,9 @@
         </div>
     </div>
 
+    <!-- boxing -->
     <div class="col-auto home-image-container pt-4">
-        <a href="#" class="home-image">
+        <a href="{% url 'about' %}" class="home-image">
             <img src="{% static 'images/home-page-boxing-image.jpg' %}" alt="Boxing classes">
             <div class="image-overlay">
                 <img src="{% static 'images/home-page-boxing-icon.svg' %}" alt="Boxing icon">
