@@ -386,18 +386,18 @@ input[name='q']::placeholder {
     font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
-
+}
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) {
-	.footer-logo {
-		display: none;
-	}
+    .footer-logo {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 991px) {
-	.footer-social-icons {
+    .footer-social-icons {
         border-top: 1px solid #bbb;
         line-height: 60px;
         padding-top: 25px;
@@ -411,15 +411,15 @@ input[name='q']::placeholder {
     }
 
     .button-white-outline,
-    .btn-full-white  {
+    .btn-full-white {
         width: 280px;
     }
 
 }
 
 @media screen and (max-width: 576px) {
-	h1 {
-		font-size: 2.375rem;
+    h1 {
+        font-size: 2.375rem;
         margin-top: 250px;
     }
 }
