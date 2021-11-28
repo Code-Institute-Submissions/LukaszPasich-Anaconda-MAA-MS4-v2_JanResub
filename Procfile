@@ -1,1 +1,0 @@
-web: gunicorn anaconda.wsgi:application
