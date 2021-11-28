@@ -27,15 +27,48 @@
         </form>
     </div>
 
-    <!-- order history-->
-    <div class="col-11 col-sm-8 col-md-5 col-lg-4 mt-4 text-light">
+    <!-- order history -->
+    <div class="col-11 col-sm-8 col-md-5 mt-4 text-light">
         <p class="text-muted">Order History</p>
 
+        <!-- order history headings -->
+        <div class="row order-history text-muted small">
+            <div class="col-2 mx-0 px-1">Order No.</div>
+            <div class="col-4 mx-0 px-1">Date</div>
+            <div class="col-4 mx-0 px-1">Item(s)</div>
+            <div class="col-2 mx-0 px-1">Total</div>
+        </div>
+
         {% for order in orders %}
-        
         <div class="row order-history">
-            <div class="col-3">
-                <p class="text-light">{{ order.date }}</p>
+            <!-- order number -->
+            <div class="col-2 mx-0 px-1">
+                <hr class="hr-dark my-2 py-0">
+                <a class="text-lred text-decoration-none small" href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">
+                    {{ order.order_number|truncatechars:6 }}
+                </a>
+            </div>
+            <!-- date -->
+            <div class="col-4 mx-0 px-1">
+                <hr class="hr-dark my-2 py-0">
+                <p class="text-light small">{{ order.date }}</p>
+            </div>
+            
+            <!-- order items -->
+            <div class="col-4 mx-0 px-1">
+                <hr class="hr-dark my-2 py-0">
+                <ul class="list-unstyled text-light">
+                    {% for item in order.lineitems.all %}
+                        <li class="small">
+                            {{ item.product.name }} <em class="text-muted"> x </em>{{ item.quantity }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- order grand total -->
+            <div class="col-2 text-light small mx-0 px-1">
+                <hr class="hr-dark my-2 py-0">
+                &euro;{{ order.grand_total }}
             </div>
         </div>
 
