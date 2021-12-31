@@ -648,3 +648,33 @@ Prototype for desktop only created.
 ---
 
 <br>
+
+## Testing 
+
+<br>
+
+### Automated Testing
+
+- Automated testing section [CLICK HERE](README_testing.md#automated-testing)
+
+### UX Testing
+
+- UX testing section [CLICK HERE](README_testing.md#ux-testing)
+
+### Manual Testing
+
+- Manual testing section[CLICk HERE](README_testing.md#manual-testing)
+
+### Bugs
+
+- Bugs fixed section [CLICk HERE](README_testing.md#bugs-fixed)
+- Bugs not fixed section [CLICk HERE](README_testing.md#bugs-not-fixed)
+
+<br>
+
+[Back to top](#contents)
+
+---
+---
+
+<br>
