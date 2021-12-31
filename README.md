@@ -494,3 +494,56 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 ---
 <br>
+
+### Structure
+
+#### Sitemap
+
+- [Sitemap CLICK HERE](https://indd.adobe.com/view/07136e64-5fa7-4427-a982-9158331285cf)
+
+
+#### Database Schema
+
+- [Database structure CLICK HERE](https://indd.adobe.com/view/2c4b9a28-36dc-4bf4-b1b9-85fc3c0fbf71)
+
+<br>
+
+[Back to top](#contents)
+
+---
+<br>
+
+### Skeleton
+
+<br>
+
+#### Wireframes (low fidelity)
+Wireframes created for 4 screen/ device sizes: desktop, tablet-landscape, tablet-portrait and phone.
+- [Wireframes for all pages AVAILABLE HERE](https://indd.adobe.com/view/d9db8027-1cdd-4de5-86b2-efcc73aef2eb)
+
+	---
+	__NOTE__
+
+	Ultimately, I didn't have time/skills to implement the membership purchase functionality that is presented in the wireframes. 
+
+	---
+
+<br>
+
+#### Prototype (high fidelity)
+Prototype for desktop only created.
+- [Prototype - desktop version of the website AVAILABLE HERE](https://xd.adobe.com/view/3225eceb-21c6-4e20-9318-36ec8daf1735-6776/)
+
+	---
+	__NOTE__
+
+	Ultimately, I didn't have time and skills to implement the membership purchase functionality that is presented in the wireframes. 
+
+	---
+
+<br>
+
+[Back to top](#contents)
+
+---
+<br>
