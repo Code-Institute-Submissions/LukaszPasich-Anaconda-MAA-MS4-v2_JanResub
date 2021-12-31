@@ -253,6 +253,11 @@
                         <p class="my-0 text-dgrey border-bottom small">{{ class.class_time }}</p>
                         <p class="text-red font-weight-bold my-0">{{ class.class_type }}</p>
                         <p class="my-0 border-top font-weight-light small">{{ class.class_level }}</p>
+                        {% if request.user.is_superuser %}
+                        <a class="text-light edit-classes text-decoration-none py-1 px-2 rounded bg-dred small" href="{% url 'edit_classes' class.id %}">
+                            <i class="fas fa-pen pr-1"></i>Edit
+                        </a>
+                        {% endif %}
                     </div>
                 {% endfor %}   
             </div>
@@ -260,17 +265,6 @@
         </div>
 
     </div>
-
-    {% if request.user.is_superuser %}
-    <!-- edit classes times -->
-    <div class="col-10">
-        <p class="text-center text-md-right edit-classes-button">
-            <a class="text-danger text-decoration-none border border-danger rounded px-5 py-1 text-right" href="{% url 'edit_classes' %}">
-                <i class="fas fa-pen mr-3"></i>Edit Classes
-            </a>
-        </p>
-    </div>
-    {% endif %}
 
 </div>
 

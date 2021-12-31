@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Class
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+from .forms import ClassForm
 
 # Create your views here.
 
@@ -34,40 +36,23 @@ def all_classes(request):
 
 
 @login_required
-def edit_classes(request):
+def edit_classes(request, class_id):
     """ Edit classes """
 
-    form = Class.objects.all()
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only website owners can do that')
+        return redirect(reverse('home'))
+
+    oneclass = get_object_or_404(Class, pk=class_id)
+
+    form = ClassForm(instance=oneclass)
+
+    messages.info(request, 'You are editing class times')
 
     template = 'classes/edit_classes.html'
     context = {
         'form': form,
+        'oneclass': oneclass,
     }
 
     return render(request, template, context)
-
-
-    # if not request.user.is_superuser:
-    #     messages.error(request, 'Sorry, only website owners can do that')
-    #     return redirect(reverse('home'))
-
-    # product = get_object_or_404(Product, pk=product_id)
-    # if request.method == 'POST':
-    #     form = ProductForm(request.POST, request.FILES, instance=product)
-    #     if form.is_valid():
-    #         form.save()
-    #         messages.success(request, 'Product updated successfully!')
-    #         return redirect(reverse('product_detail', args=[product.id]))
-    #     else:
-    #         messages.error(request, 'Failed to update product. Please ensure the form is valid.')
-    # else:
-    #     form = ProductForm(instance=product)
-    #     messages.info(request, f'You are editing {product.name}')
-
-    # template = 'products/edit_product.html'
-    # context = {
-    #     'form': form,
-    #     'product': product,
-    # }
-
-    # return render(request, template, context)

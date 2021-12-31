@@ -14,19 +14,15 @@
 <div class="row justify-content-center bg-dgrey pt-3">
     <!-- form -->
     <div class="col-10 col-sm-7 col-md-6 col-lg-4">
-        <form method="POST" action="" class="form text-light small" enctype="multipart/form-data">
+        <form method="POST" action="{% url 'edit_classes' class.id %}" class="form text-light small" enctype="multipart/form-data">
 
             {% csrf_token %}
-            {% for field in form %}
-                {{ field.class_name }}
-                {{ field.class_time }}
-
-            {% endfor %}}}
+            {{ form | crispy }}
 
             <!-- buttons -->
             <div class="text-right pb-5">
-                <a class="btn button-white-outline rounded border-light mx-1 my-2" href="{% url 'products' %}">Cancel</a>
-                <button class="btn btn-full-white rounded mx-1 my-2" type="submit">Update Product</button>
+                <a class="btn button-white-outline rounded border-light mx-1 my-2" href="{% url 'all_classes' %}">Cancel</a>
+                <button class="btn btn-full-white rounded mx-1 my-2" type="submit">Update Classes</button>
             </div>
         </form>
     </div>
