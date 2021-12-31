@@ -547,3 +547,70 @@ Prototype for desktop only created.
 
 ---
 <br>
+
+### Surface
+
+<br>
+
+-	The Name - Why Anaconda?
+
+	The martial art of Brazilian Jiu-Jitsu - one of the staples of the academy - is in essence the skill of grappling, holding and taking down the opponent to then force them into submission via joint lock or chokehold.
+	This very much resembles the actions of a constrictor snake and one of the submissions in BJJ is even called an _Anaconda Choke_. As grappling has become one of the key weapons in Mixed Martial Artist's arsenal, Brazilian Jiu-Jitsu became near synonymous with MMA and that's why I thought it was a good name for this Martial Arts Academy.
+
+<br>
+
+- Logo
+
+	With the logo I was trying to emulate the classic idea of the Martial Arts Club badge which seems to have always evolved around some related image or an Asian symbol enclosed in a circle (or lately popular octagon), with the club name and all the necessary text wrapped around that circle.
+
+	Reference images:
+
+	<img src="assets/images_readme/ms1-readme-ux-logoref.jpg" alt="Anaconda MAA website logo reference">
+
+	Anaconda MAA final logo:
+
+	<img src="assets/images_readme/ms1-readme-ux-logo.jpg" alt="Anaconda MAA logo">
+
+<br>
+
+- Colours
+
+	Principally white, red and black colour palette.
+	With black and white representing the concept of dualism, describing how seemingly opposite or contrary forces may actually be complementary, interconnected, and interdependent in the natural world, and the red colour being universally seen as a sign of both life and aggression - the 3 colours have always been used in martial arts themes.
+
+	In my research of the competitor's websites, I discovered that these were the prevalent colours on all of those websites and the similar colour theme would also be possibly expected by the website user/ visitor. Meeting this expectation adds credibility to the brand, company and the website. 
+
+
+	<img src="assets/images_readme/ms1-readme-ux-colours.jpg" alt="Anaconda MAA website colours">
+
+<br>
+
+- Typography
+
+	Raleway: Semi-Bold, Bold and Extra Bold - for headlines and sub-headlines.
+
+	_Raleway_ because it is a nice and clean display typeface and also geometric sans-serif fonts (as _Raleway_ being geometric inspired) tend to have more neutral feel about them.
+	As Anaconda MAA aims at attracting a diverse audience, I didn't want to use font with too strong personality, because I wanted to convey an 'everybody is welcome' academy's approach to attracting it's new members.
+
+	Roboto: Regular - for body text.
+
+	_Roboto_ has forms that are largely geometric, but at the same time, the font features friendly and open curves - it is an excellent body text font and a good compliment to Raleway.
+	Allowing letters to be settled into their natural width and with slab-serifs clearly defining the text baseline _Roboto_ creates an easy and more natural reading rhythm.
+
+
+	Both fonts and also their combination has been tried and is well established and widely popular on the web.
+
+<br>
+
+- Images - Why black and white photography?
+
+	Black and white photography removes any distraction of color and helps the viewer focus on other aspects of the photo, such as the subject, the textures, shapes and patterns, and the composition.
+	It can convey remarkable purity of emotion and action and therefore works perfect for martial arts.
+
+
+[Back to top](#contents)
+
+---
+---
+
+<br>
