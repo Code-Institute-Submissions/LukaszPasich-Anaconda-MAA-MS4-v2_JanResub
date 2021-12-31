@@ -655,20 +655,20 @@ Prototype for desktop only created.
 
 ### Automated Testing
 
-- Automated testing section [CLICK HERE](README_testing.md#automated-testing)
+- Automated testing full section [CLICK HERE](README_testing.md#automated-testing)
 
 ### UX Testing
 
-- UX testing section [CLICK HERE](README_testing.md#ux-testing)
+- UX testing full section [CLICK HERE](README_testing.md#ux-testing)
 
 ### Manual Testing
 
-- Manual testing section[CLICk HERE](README_testing.md#manual-testing)
+- Manual testing full section[CLICk HERE](README_testing.md#manual-testing)
 
 ### Bugs
 
-- Bugs fixed section [CLICk HERE](README_testing.md#bugs-fixed)
-- Bugs not fixed section [CLICk HERE](README_testing.md#bugs-not-fixed)
+- Bugs fixed full section [CLICk HERE](README_testing.md#bugs-fixed)
+- Bugs not fixed full section [CLICk HERE](README_testing.md#bugs-not-fixed)
 
 <br>
 
@@ -676,5 +676,36 @@ Prototype for desktop only created.
 
 ---
 ---
+
+<br>
+
+## Deployment
+
+<br>
+
+### Forking GitHub Repository
+(A copy of the original repository on your GitHub account)
+
+1. Log in to GitHub and locate this [GitHub Repository](https://github.com/LukaszPasich/Anaconda-MAA-MS4-v2)
+2. Locate the "Fork" button in the top right-hand side of the page and click on it.
+3. You now have a copy of the original repository in your GitHub account.
+
+<br>
+
+### Making a Local Clone
+1. Log in to GitHub and locate this [GitHub Repository](https://github.com/LukaszPasich/Anaconda-MAA-MS4-v2)
+2. Under the repository name, click on "Code" button.
+3. In the Clone/ Download unfolded tab click on HTTPS (to clone with HTTPS).
+4. Click on the 'clipboard' icon to copy the URL of your project.
+5. Open your IDE, open terminal.
+6. Change the current working directory to the location where you want the cloned directory.
+7. In the terminal type <code>git clone</code>, and then paste the URL you copied earlier.
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+8. Press _ENTER_ to create your local clone.
+
+	__Note:__ It is important that you create an env.py file to save your __environment variables__, the web app will not function without these variables:
+	
 
 <br>
