@@ -614,3 +614,37 @@ Prototype for desktop only created.
 ---
 
 <br>
+
+## Technologies
+### Tools
+- [GitHub](https://github.com) was an IDE used for the project.
+- [GitPod](https://gitpod.io/workspaces/) was used for version control.
+- [Heroku](https://heroku.com) was used for website deployment.
+- [Stripe](https://stripe.com/ie) was used for processing online payments.
+- [Adobe Indesign](https://balsamiq.com) was used to create low fidelity wireframes.
+- [Adobe XD](https://www.adobe.com/ie/products/xd.html) was used to build the high fidelity prototypes.
+- [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html) was used to create logo.
+- [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) was used to edit, crop and save images.
+- [Am I Responsive](http://ami.responsivedesign.is) was used to create the images of each page displayed on different screen sizes in this _Readme_ file.
+
+### Libraries and frameworks
+- [Django](https://www.djangoproject.com/) - a high-level Python framework was used to develop the website. It provided framework for easy implementation and use of data models, views and URL's, templates, forms, authentication and provided admin function.
+- [jQuery](https://jquery.com/) - a JavaScript library, was used for a number of front-end interaction solutions.
+- [Bootstrap](https://getbootstrap.com/) library was used to style the website and make it responsive.
+- [Google Fonts](https://fonts.google.com) was used to link the "Raleway" and "Roboto" fonts.
+- [Font Awesome](https://fontawesome.com) was used for icons.
+
+### Languages
+- HTML5
+- CSS3
+- JavaScript
+- Python
+
+<br>
+
+[Back to top](#contents)
+
+---
+---
+
+<br>
