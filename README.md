@@ -233,3 +233,244 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 	
 
 <br>
+
+11. Account - Logout page
+
+	The _Logout_ page is accessible from the navbar _Account_ dropdown menu, if user is currently signed in. On successful sign out the 'Success!' toast is displayed and the user is taken to the _Home_ page.
+
+	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+
+<br>
+
+12. Account - Profile page
+
+	The _My Profile_ page is accessible from the navbar _Account_ dropdown menu, if user is currently signed in. The page contains the form with user's delivery details and the history of purchases made on the website.
+
+	Delivery Information form has fields:
+	- Phone number
+	- Street Address 1
+	- Street Address 2
+	- Town or City
+	- County, State or Locality
+	- Postal Code
+	- Country (dropdown)
+
+	On submitting this form, the 'Success!' toast pops up and the page reloads with the information updated.
+
+	Order history contains the following information:
+	- Order number - links to the order confirmation originally generated, with more details of the order (a toast 'Alert!' informs user that this os the past order)
+	- Order date
+	- Items purchased
+	- Order total
+
+	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+
+
+<br>
+
+12. Account - Add Products page
+
+	The _Add Product_ page allows admin user to add new products to the database and is accessible from the navbar _Account_ dropdown menu, only by admin user who is currently signed in. The page contains the form with the following product details to fill in (* fields are required):
+	- Category (Choose from dropdown)
+	- SKU
+	- Name *
+	- Description
+	- Price *
+	- Rating
+	- Image URL (opens select from your computer web browser box)
+
+	On submitting this form, the 'Success!' toast pops - the new product has been added to the database and the admin user is redirected to the _Product View_ page with the preview of the newly added product.
+
+	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+
+<br>
+
+13. Shop page
+
+	Displays all products in the website's database on a responsive grid. Each product is represented by a box containing below details:
+	
+	- Image
+	- Category
+	- Name
+	- Price
+	- Rating
+	- Edit button (available only to admin user)
+	- Delete button (available only to admin user)
+
+	Clicking on one of the products takes user to the individual _Product View_ page.
+
+	There are tabs with different categories above the products allowing user to select all products or only products in the chosen category.
+
+	---
+	__NOTE:__
+
+	More categories and more products should be added to complete the full offer.
+	___
+
+	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+
+<br>
+
+14. Product search bar
+
+	Product search bar appears on the _Shop_ page. It allows for searching for products based on the keyword(s) entered into the search bar (keywords searched in the category, name and description of the products).
+	An 'Error!' toast pops up if search is performed with no search criteria entered or the search criteria was not found.
+
+<br>
+
+15. Sort by...
+
+	_Sort by_ box appears on the _Shop_ page. It allows for sorting of the current selection of the products on the page (can be all products or products filtered by keyword or category).
+	
+	Current sorting criteria are:
+	- Price (low to high, high to low)
+	- Rating (low to high, high to low)
+	- Name (A-Z, Z-A)
+	- Category (A-Z, Z-A)
+
+<br>
+
+16. Product View page
+
+	Individual _Product View_ page is accessed from the _Shop_ page after clicking on any product. This page contains similar details to the _Shop_ page with some expansions:
+	- Image (bigger than on the _Shop_ page)
+	- Category
+	- Name
+	- Price
+	- Rating
+	- Description
+	- Quantity Selector
+	- Edit button (available only to admin user)
+	- Delete button (available only to admin user)
+
+	_Add to Bag_ button ads the currently viewed product and it's selected quantity to the shopping bag. The 'Success!' toast with full current details of the shopping bag is displayed.
+
+	<img src="assets/images_readme/ms1-readme-features-favicon.png" alt="Anaconda MAA website - favicon">
+
+<br>
+
+17. Edit Product page
+
+	The _Edit Product_ page is available only to admin user and allows admin user to edit existing products and update these edits in database. Editing the product is available from the _Shop_ page or _Product View_ page. The page contains the same form as the _Add Product_ page, with all the fields populated with current product information.
+
+	When accesing the _Edit Product_ page an 'Alert!' toast pops up to remind the user that this action will change product information.
+
+	On submitting this form (Update product), the 'Success!' toast pops - the product has been updated in the database and the admin user is redirected to the _Product View_ page with the preview of the updated product.
+
+	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+
+<br>
+
+18. _Delete Product_ functionality
+
+	_Delete Product_ functionality is available only to admin user and allows admin user to delete existing product from the database.
+	Deleting the product is available from the _Shop_ page or _Product View_ page.
+	
+	---
+	__WARNING!__
+	
+	Currently there is no confirmation of deleting the product required, so once the _Delete_ button is clicked on, the product is instantly erased from database. This will need to be corrected at the soonest opportunity.
+
+	---
+
+	On successful _Delete_ a 'Success!' toast pops up.
+
+<br>
+
+19. _Shopping Bag_ page and functionality
+
+	_Shopping Bag_ page contains the list of products that have been added to the bag in the single continued session (not ended with payment). The products are subtotalled individually and the grand total is calculated at the bottom of the page. 
+
+	_Shopping Bag_ page can be accessed via the link in the navbar - the current euro value of the bag link - and it can be also accessed by clicking on _Go to secure checkout_ button on the 'SUCCESS!' toast, which always appears on the occasion of adding product to the _Shopping Bag_ or updating the quantity. 
+
+	---
+	__NOTE!__
+
+	There is 10% Delivery charge calculated on orders under 50EUR, this hasn't been communicated very well, I decided to communicate more strongly 10% Discount for Academy members, but connecting memberships to users didn't happen at the end. It should be a featured considered at the next round of website updates.  
+
+	---
+
+	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+
+
+<br>
+
+20. _Checkout_ page and functionality
+
+	_Checkout_ page is the last step before confirming the payment in the Anaconda academy shop. The page contains the summary overview of the shopping bag with the grand total and a form with personal, delivery and payment details.
+
+	The form contains below fields (* fields are required):
+	- Full name *
+	- Email *
+	- Phone number *
+	- Street address 1 *
+	- Street address 2 *
+	- Town or City *
+	- County, State or Locality
+	- Postal code
+	- Country * (select from dropdown menu)
+	- Credit Card number *
+	- Save delivery info to my profile (checkbox)
+
+	On submitting the form (Complete Order), the payment is being processed through Stripe, the 'Success!' toast pops up and the user is taken to the _Thank You_ page with full details order confirmation.
+
+	---
+	__NOTE!__
+
+	The order confirmation email is currently not being sent. This needs to be fixed at the soonest opportunity.
+
+	---
+
+	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+
+<br>
+
+21. Order confirmation _Thank You_ page
+
+	This page contains full order summary of the order just processed.
+	- Order info:
+		- Order number
+		- Order date
+	- Order details
+	- Delivering to info:
+		- Full name
+		- Phone number
+		- Street address 1
+		- Street address 2
+		- Town or City
+		- County, State or Locality
+		- Postal code
+		- Country
+	- Billing info:
+		- Order total
+		- Delivery
+		- Grand total
+
+
+	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+
+<br>
+
+22. _Stripe_ payment functionality
+
+	_Stripe_ is setup for processing the payment on the website. Webhooks are connected to ensure that the order is accounted for at the point of clicking on _Complete Order_ button on _Checkout_ page and is going to be processed even if the connection with website is broken suddenly.
+
+<br>
+
+23. Toasts
+
+	Toasts are connected to _messages_ in views and they pass on the messages of success, info, warnings and errors.
+	
+	Check the full list of toasts in the [Manual testing section](README_testing.md#manual-testing).
+
+<br>
+
+24. Toasts
+
+	Toasts are connected to _messages_ in views and they pass on the messages of success, info, warnings and errors.
+
+	<img src="assets/images_readme/ms1-readme-features-favicon.png" alt="Anaconda MAA website - favicon">
+
+<br>
+<br>
+
