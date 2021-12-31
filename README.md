@@ -49,3 +49,36 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
     - [Resources](#resources)
 	- [Acknowledgements](#acknowledgements)
 6. [Contact](#contact)
+
+---
+---
+<br>
+
+## UX
+
+### Strategy
+
+<br>
+
+#### User Goals
+- Find out information about the academy, it's procedures, different classes provided and instructors teaching the classes.
+- Find out information about different age groups and skill levels that classes are divided into and timetable for classes.
+- Find out membership prices.
+- Sign up for membership. 
+- Find information on how to get in touch with the school and start the training.
+- Buy training equipment on the website
+
+#### Stakeholder Goals
+- Attract new members to join the academy and retain existing members.
+- Provide comprehensive information about the academy and classes provided.
+- Increase online presence as a tool of advertising and promotion.
+- Process membership sign ups on the website.
+- Sell Anaconda branded merchandise.
+- Process online payments easily and without a hassle.
+- Be able to easily update information on the website.
+
+#### User Stories
+- Link to User Stories - [CLICK HERE](https://docs.google.com/spreadsheets/d/1CIi1zBifp5aBSsgi96vp9oLkrAsZ-a9Hyv3Tw9sNon4/edit?usp=sharing)
+
+<br>
+<br>
