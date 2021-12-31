@@ -847,3 +847,76 @@ Go to Heroku _Settings_ tab, _Reveal Config Vars_ and add a new _Config Var_ wit
 
 <br>
 
+## Credits
+### Content
+The textual content was influenced by or taken from the websites:
+- [JS Brazilian Jiu-Jitsu](https://www.jsbjj.ie "JS Brazilian Jiu-Jitsu")
+- [Evolve Daily blog](https://evolve-mma.com/blog/4-reasons-boxing-will-make-you-obsessed-to-working-out/ "Evolve Daily blog")
+- [Club Solutions Magazine](https://clubsolutionsmagazine.com/2018/11/7-reasons-kickboxing-classes-schedule/ "Club Solutions Magazine")
+- [Satori BJJ Dublin](https://www.satoribjj.com "Satori BJJ Dublin")
+- [Royal Grappling Academy](https://rga.ie "Royal Grappling Academy")
+- [www.venum.com](https://www.venum.com "www.venum.com")
+
+### Media
+- Home page main banner - by Nathan Dumlao, downloaded from [www.unsplash.com](https://unsplash.com/photos/DT3bb-KDAus "www.unsplash.com")
+- Home page BJJ white image - by Nathan Dumlao, downloaded from [www.unsplash.com](https://unsplash.com/photos/NdCixEBtTf0 "www.unsplash.com")
+- Home page kickboxing white image - bu Justin Ng, downloaded from [www.unsplash.com](https://unsplash.com/photos/45tcVh0M3kw "www.unsplash.com")
+- Home page kickboxing icon - by Miguel Angel, downloaded from [www.vecteezy.com](https://www.vecteezy.com/vector-art/93089-woman-and-man-fighting-silhouettes "www.vecteezy.com")
+- Home page boxing white image - by Anastase Maragos, downloaded from [www.unsplash.com](https://unsplash.com/photos/ZUBNPRZsQvk "www.unsplash.com")
+- Home page boxing icon - by yoosillyone, downloaded from [www.vecteezy.com](https://www.vecteezy.com/vector-art/166423-muay-thai-silhouette "www.vecteezy.com")
+- About page main banner - by Nathan Dumlao, downloaded from [www.unsplash.com](https://unsplash.com/photos/NdCixEBtTf0 "www.unsplash.com")
+- About page boxing bag image - by Milo Bunnik, downloaded from [www.unsplash.com](https://unsplash.com/photos/lp9GQiQNHqc "www.unsplash.com")
+- About page BJJ image - by Nathan Dumlao, downloaded from [www.unsplash.com](https://unsplash.com/photos/YmNIHXdTfPg "www.unsplash.com")
+- About page kickboxing image - by cottonbro, downloaded from [www.pexels.com](https://www.pexels.com/photo/woman-in-black-shirt-and-black-shorts-carrying-black-leather-shoulder-bag-4754146/ "www.pexels.com")
+- About page boxing image - by Logan Weaver, downloaded from [www.unsplash.com](https://unsplash.com/photos/9D_rUDe7xvA "www.unsplash.com")
+- About page BJJ coach image - by Jahir Martinez, downloaded from [www.unsplash.com](https://unsplash.com/photos/cVLOqm8sSXc "www.unsplash.com")
+- About page kickboxing coach image - by Michael Uebler, downloaded from [www.unsplash.com](https://unsplash.com/photos/EwnkEPhVym4 "www.unsplash.com")
+- About page boxing coach image - by John Fornander, downloaded from [www.unsplash.com](https://unsplash.com/photos/r79IYSMpu_M "www.unsplash.com")
+- Classes page main banner - by Nathan Dumlao, downloaded from [www.unsplash.com](https://unsplash.com/photos/AsCCBr7J-XM "www.unsplash.com")
+- Classes page kids & teens classes image - by Microgen, downloaded from [www.stock.adobe.com](https://stock.adobe.com/ie/images/martial-arts-training-class-for-children/176854174 "Adobe Stock")
+- Classes page adults classes image - by Nathan Dumlao, downloaded from [www.unsplash.com](https://unsplash.com/photos/YQg2wxJAINQ "www.unsplash.com")
+- Shop page main banner - by Gantas Vaičiulėnas, downloaded from [www.unsplash.com](https://unsplash.com/photos/rvAcZMqFIkY "www.unsplash.com")
+- Contact page main banner - by Thao Le Hoang, downloaded from [www.unsplash.com](https://unsplash.com/photos/XeBk0qF77_4 "www.unsplash.com")
+
+### Code
+- The whole website relied very heavily on the 'Boutique Ado' tutorial from Code Institute.
+- Navigation links hover effect (underline from center) styling - code found on Hover.css website [https://ianlunn.github.io/Hover/#effects](https://ianlunn.github.io/Hover/#effects)
+- _Home_ page - overlay hover effect on 3 images (BJJ, Kickboxing and Boxing) styling - code found on [www.w3schools.com](https://www.w3schools.com/howto/howto_css_image_overlay_title.asp)
+- _Coaches_ page - zoom effect on hover over coaches images styling - code found on [www.w3bits.com](https://w3bits.com/css-image-hover-zoom/)
+
+### Resources
+- [www.w3schools.com](https://www.w3schools.com)
+- [www.stackoverflow.com](https://stackoverflow.com)
+- [www.developer.mozilla.org](https://developer.mozilla.org/en-US/)
+- [Django documentation](https://www.djangoproject.com)
+- [Code Institute course content](https://codeinstitute.net/)
+
+### Acknowledgements
+- Thank you to my mentor __Nishant Kumar__ for his guidance, support and continuous helpful feedback throughout this project.
+- Tutor Support at Code Institute and the Slack Community for a solution to any question at any time.
+
+<br>
+
+[Back to top](#contents)
+
+---
+---
+
+<br>
+
+## Contact
+For any queries related to this project, you can contact me at:
+
+lukas (dot) zed81 (at) gmail (dot) com.
+
+<br>
+
+[Back to top](#contents)
+
+---
+---
+---
+
+<br>
+
+### THANK YOU FOR TAKING TIME TO VIEW THIS PROJECT!
