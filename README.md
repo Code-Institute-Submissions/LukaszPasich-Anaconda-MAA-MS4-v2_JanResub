@@ -707,5 +707,143 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 	__Note:__ It is important that you create an env.py file to save your __environment variables__, the web app will not function without these variables:
 	
+<br>
+
+### Heroku Deployment
+
+1. Log in to [Heroku](https://www.heroku.com).
+2. From the Dashboard, click on the _New_ button in the top-right corner and then select "Create new app".
+3. Insert your app name.
+4. Select the most appropriate region for your location.
+5. Click the "Create app" button.
+6. In the _Resources_ tab search for Add-on "Heroku Postgres", click on it and 'Provision' it using the Free plan (or another plan of your choice).
+7. In Gitpod CLI install 2 more dependencies:
+
+	```
+	pip3 install dj.database.url
+	pip3 install psycopg2-binary 
+	```
+8. Freeze the requirements:
+
+	```
+	pip3 freeze > requirements.txt
+	```	
+9. In the app's settings.py file:
+
+	```
+	import dj_database_url
+	```	
+	... then comment out the default DATABASES settings in the settings.py file and replace it with:
+	```
+	DATABASES = {
+		'default': dj_database_url.parse(database_URL_from_Heroku) 
+	}
+	```	
+	... you can get database_URL_from_Heroku in your app's _Settings_ tab (Reveal Cofig Vars - value for the DATABASE_URL key) or by typing <code>heroku config</code> in Heroku CLI.
+10. With the new postgres database connected, migrations need to be run again, in CLI type in:
+
+	```
+	python3 manage.py migrate
+	```	
+
+11. Import all the data, type in CLI:
+
+	```
+	python3 manage.py loaddata db
+	```	
+	... where db is the name of the json file with fixtures. If there are multiple fixture files and some of them depend on other files, they should be loaded AFTER the files they depend on have been loaded.
+
+12. Create superuser:
+
+	```
+	python3 manage.py createsuperuser
+	```	
+	... create username, enter email address and create password.
+
+13. In settings.py delete current Heroku DATABASES config, uncomment previously commented out DATABASES config (you can safely push your code now and the postgres database url is not going to end up in version control) and put it in an _if statement_:
+	```
+	if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+	else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+	```	
+
+14. Instal gunicorn (acts as a webserver), in CLI:
+	```
+	pip3 install gunicorn
+	```	
+	...then freeze requirements:
+	```
+	pip3 freeze > requirements.txt
+	```
+
+15. Create Procfile at project level, inside the file type in on the first line:
+	```
+	web: gunicorn your_app_name.wsgi:application
+	```
+	... your_app_name is the name of the project - the name of the folder where settings.py file is.
+
+16. Login to Heroku - in CLI: heroku login (or heroku login -i and give email and password of the superuser).
+
+
+17. Temporarily disable collect static by typing in CLI:
+	```
+	heroku config: set DISABLE_COLLECTSTATIC=1 --app name_of_the_app
+	```
+	... name_of_the_app in heroku.
+
+
+18. Add the hostname of heroku app to allowed hosts in settings.py:
+	```
+	ALLOWED_HOSTS = ['app_name_in_heroku.herokuapp.com', 'localhost']
+	```
+
+19. Commit changes and push to GitHub.
+
+20. Push to Heroku, in CLI type in:
+	```
+	git push heroku main
+	```
+	... if the app was created on the website (fatal: 'heroku' does not appear to be a git repository), heroku git remote may need to be initialized:
+	```
+	heroku git:remote -a app_name_in_heroku 
+	```
+	... and then type again in CLI: git push heroku main
+
+21. After few seconds at the end of the load up, the heroku link to the app will be ready.
+
+22. To set for automatic deploy when pushed, go to Heroku _Deploy_ tab:
+- click _Connect to Github_
+- enter the name of the app in search bar (name of the GitHub repositoiry) - click "Search"
+- click "Connect" to the repository
+- below, click "Enable Automatic Deploys" - whenever code is pushed to GitHub now, it will automatically be pushed to Heroku as well.
+
+23. Go to [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) and generate a new key - copy the key.
+Go to Heroku _Settings_ tab, _Reveal Config Vars_ and add a new _Config Var_ with key: SECRET_KEY, and value: paste the key from Django Secret Key Generator.
+
+24. In settings.py replace SECRET_KEY with the call to get it from environment:
+	```
+	SECRET_KEY = os.environ.get('SECRET_KEY', '')
+	```
+
+25. In settings.py set DEBUG to be True only if there's a variable DEVELOPMENT in the environment. 
+	```
+	DEBUG = 'DEVELOPMENT' in os.environ
+	```
 
 <br>
+
+[Back to top](#contents)
+
+---
+---
+
+<br>
+
