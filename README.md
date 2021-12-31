@@ -474,3 +474,23 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 <br>
 <br>
 
+#### Features to implement in the future
+- Online Membership Signup & Payment feature.
+- Connect Memberships to Users.
+- Connect 10% discount in the shop to users with academy membership.
+- Add more products and categories to the shop.
+- Connect Order Confirmation email.
+- Add confirmation or cancel delete (defensive design) to _Delete Product_ button.
+- Connect the contact form to some emailing service (EmailJS etc...)
+- Add Google maps with a marker on contact page.
+- Add members testimonials page.
+- Online Free Trial Class booking - a feature allowing users to pick the class date and time in the online calendar and have the class automatically booked, with confirmation email automatically sent to user.
+
+
+<br>
+
+[Back to top](#contents)
+
+
+---
+<br>
