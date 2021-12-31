@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Class
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -30,3 +31,43 @@ def all_classes(request):
     }
 
     return render(request, 'classes/times.html', context)
+
+
+@login_required
+def edit_classes(request):
+    """ Edit classes """
+
+    form = Class.objects.all()
+
+    template = 'classes/edit_classes.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+    # if not request.user.is_superuser:
+    #     messages.error(request, 'Sorry, only website owners can do that')
+    #     return redirect(reverse('home'))
+
+    # product = get_object_or_404(Product, pk=product_id)
+    # if request.method == 'POST':
+    #     form = ProductForm(request.POST, request.FILES, instance=product)
+    #     if form.is_valid():
+    #         form.save()
+    #         messages.success(request, 'Product updated successfully!')
+    #         return redirect(reverse('product_detail', args=[product.id]))
+    #     else:
+    #         messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    # else:
+    #     form = ProductForm(instance=product)
+    #     messages.info(request, f'You are editing {product.name}')
+
+    # template = 'products/edit_product.html'
+    # context = {
+    #     'form': form,
+    #     'product': product,
+    # }
+
+    # return render(request, template, context)
