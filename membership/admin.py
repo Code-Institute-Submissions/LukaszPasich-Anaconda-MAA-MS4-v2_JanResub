@@ -8,6 +8,7 @@ class DisciplineAdmin(admin.ModelAdmin):
         'friendly_name',
     )
 
+
 class MembershipAdmin(admin.ModelAdmin):
     list_display = (
         'membership_no',
