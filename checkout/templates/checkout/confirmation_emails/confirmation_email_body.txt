@@ -5,9 +5,9 @@ This is a confirmation of your purchase at Anaconda MAA shop. Your order informa
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
 
-Order Total: ${{ order.order_total }}
-Delivery: ${{ order.delivery_cost }}
-Grand Total: ${{ order.grand_total }}
+Order Total: EUR{{ order.order_total }}
+Delivery: EUR{{ order.delivery_cost }}
+Grand Total: EUR{{ order.grand_total }}
 
 Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
 
