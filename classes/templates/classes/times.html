@@ -188,6 +188,11 @@
                         <p class="my-0 text-dgrey border-bottom small">{{ class.class_time }}</p>
                         <p class="text-red font-weight-bold my-0">{{ class.class_type }}</p>
                         <p class="my-0 border-top font-weight-light small">{{ class.class_level }}</p>
+                        {% if request.user.is_superuser %}
+                        <a class="text-light edit-classes text-decoration-none py-1 px-2 rounded bg-dred small" href="{% url 'edit_classes' class.id %}">
+                            <i class="fas fa-pen pr-1"></i>Edit
+                        </a>
+                        {% endif %}
                     </div>
                 {% endfor %}   
             </div>
@@ -201,6 +206,11 @@
                         <p class="my-0 text-dgrey border-bottom small">{{ class.class_time }}</p>
                         <p class="text-red font-weight-bold my-0">{{ class.class_type }}</p>
                         <p class="my-0 border-top font-weight-light small">{{ class.class_level }}</p>
+                        {% if request.user.is_superuser %}
+                        <a class="text-light edit-classes text-decoration-none py-1 px-2 rounded bg-dred small" href="{% url 'edit_classes' class.id %}">
+                            <i class="fas fa-pen pr-1"></i>Edit
+                        </a>
+                        {% endif %}
                     </div>
                 {% endfor %}   
             </div>
@@ -214,6 +224,11 @@
                         <p class="my-0 text-dgrey border-bottom small">{{ class.class_time }}</p>
                         <p class="text-red font-weight-bold my-0">{{ class.class_type }}</p>
                         <p class="my-0 border-top font-weight-light small">{{ class.class_level }}</p>
+                        {% if request.user.is_superuser %}
+                        <a class="text-light edit-classes text-decoration-none py-1 px-2 rounded bg-dred small" href="{% url 'edit_classes' class.id %}">
+                            <i class="fas fa-pen pr-1"></i>Edit
+                        </a>
+                        {% endif %}
                     </div>
                 {% endfor %}   
             </div>
@@ -227,6 +242,11 @@
                         <p class="my-0 text-dgrey border-bottom small">{{ class.class_time }}</p>
                         <p class="text-red font-weight-bold my-0">{{ class.class_type }}</p>
                         <p class="my-0 border-top font-weight-light small">{{ class.class_level }}</p>
+                        {% if request.user.is_superuser %}
+                        <a class="text-light edit-classes text-decoration-none py-1 px-2 rounded bg-dred small" href="{% url 'edit_classes' class.id %}">
+                            <i class="fas fa-pen pr-1"></i>Edit
+                        </a>
+                        {% endif %}
                     </div>
                 {% endfor %}   
             </div>
@@ -240,6 +260,11 @@
                         <p class="my-0 text-dgrey border-bottom small">{{ class.class_time }}</p>
                         <p class="text-red font-weight-bold my-0">{{ class.class_type }}</p>
                         <p class="my-0 border-top font-weight-light small">{{ class.class_level }}</p>
+                        {% if request.user.is_superuser %}
+                        <a class="text-light edit-classes text-decoration-none py-1 px-2 rounded bg-dred small" href="{% url 'edit_classes' class.id %}">
+                            <i class="fas fa-pen pr-1"></i>Edit
+                        </a>
+                        {% endif %}
                     </div>
                 {% endfor %}   
             </div>
