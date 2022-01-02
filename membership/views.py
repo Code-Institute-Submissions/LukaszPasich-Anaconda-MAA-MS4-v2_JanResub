@@ -11,6 +11,7 @@ def all_memberships(request):
 
     context = {
         'memberships': memberships,
+        'on_all_memberships_page': True,
     }
 
     return render(request, 'memberships/memberships.html', context)
