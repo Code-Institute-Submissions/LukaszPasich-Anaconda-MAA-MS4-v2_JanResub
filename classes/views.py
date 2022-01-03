@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Class
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+from .models import Class
 from .forms import ClassForm
 
 # Create your views here.
@@ -36,29 +36,6 @@ def all_classes(request):
 
 
 @login_required
-def edit_classes(request, class_id):
-    """ A view to edit classes """
-
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only website owners can do that')
-        return redirect(reverse('home'))
-
-    oneclass = get_object_or_404(Class, pk=class_id)
-
-    form = ClassForm(instance=oneclass)
-
-    messages.info(request, 'You are editing class times')
-
-    template = 'classes/edit_classes.html'
-    context = {
-        'form': form,
-        'oneclass': oneclass,
-    }
-
-    return render(request, template, context)
-
-
-@login_required
 def add_class(request):
     """ A view to add classes """
     if request.method == "POST":
@@ -72,10 +49,42 @@ def add_class(request):
                            Please ensure the form is valid.''')
     else:
         form = ClassForm()
-        
+
     template = 'classes/add_class.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+# edit not working currently
+@login_required
+def edit_class(request, class_id):
+    """ A view to edit classes """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only website owners can do that')
+        return redirect(reverse('home'))
+
+    singleclass = get_object_or_404(Class, pk=class_id)
+
+    if request.method == "POST":
+        form = ClassForm(request.POST, instance=singleclass)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated the class!')
+            return redirect(reverse('all_classes'))
+        else:
+            messages.error(request, '''Failed to update the class.
+                           Please ensure the form is valid.''')
+    else:
+        form = ClassForm(instance=singleclass)
+        messages.info(request, 'You are editing class times')
+
+    template = 'classes/edit_class.html'
+    context = {
+        'form': form,
+        'singleclass': singleclass,
     }
 
     return render(request, template, context)

@@ -5,7 +5,7 @@
 <!-- heading -->
 <div class="row justify-content-center bg-dgrey">
     <div class="col-11 col-lg-10">
-        <h2 class="px-5 pb-3">Edit Classes</h2>
+        <h2 class="px-5 pb-3">Edit Class</h2>
         <hr class="hr-light">
     </div>
 </div>
@@ -14,7 +14,7 @@
 <div class="row justify-content-center bg-dgrey pt-3">
     <!-- form -->
     <div class="col-10 col-sm-7 col-md-6 col-lg-4">
-        <form method="POST" action="{% url 'edit_classes' class.id %}" class="form text-light small" enctype="multipart/form-data">
+        <form method="POST" action="{% url 'edit_class' class.id %}" class="form text-light small" enctype="multipart/form-data">
 
             {% csrf_token %}
             {{ form | crispy }}
@@ -22,7 +22,7 @@
             <!-- buttons -->
             <div class="text-right pb-5">
                 <a class="btn button-white-outline rounded border-light mx-1 my-2" href="{% url 'all_classes' %}">Cancel</a>
-                <button class="btn btn-full-white rounded mx-1 my-2" type="submit">Update Classes</button>
+                <button class="btn btn-full-white rounded mx-1 my-2" type="submit">Update Class</button>
             </div>
         </form>
     </div>
