@@ -37,7 +37,7 @@ def all_classes(request):
 
 @login_required
 def edit_classes(request, class_id):
-    """ Edit classes """
+    """ A view to edit classes """
 
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only website owners can do that')
@@ -53,6 +53,29 @@ def edit_classes(request, class_id):
     context = {
         'form': form,
         'oneclass': oneclass,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def add_class(request):
+    """ A view to add classes """
+    if request.method == "POST":
+        form = ClassForm(request.POST)
+        if form.is_valid:
+            form.save()
+            messages.success(request, 'Successfully added class!')
+            return redirect(reverse('all_classes'))
+        else:
+            messages.error(request, '''Failed to add class.
+                           Please ensure the form is valid.''')
+    else:
+        form = ClassForm()
+        
+    template = 'classes/add_class.html'
+    context = {
+        'form': form,
     }
 
     return render(request, template, context)

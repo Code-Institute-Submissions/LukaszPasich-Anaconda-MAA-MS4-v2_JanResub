@@ -78,6 +78,7 @@
                   {% if request.user.is_superuser %}
                   <a href="{% url 'add_product' %}" class="dropdown-item text-uppercase">Products</a>
                   <a href="{% url 'add_membership' %}" class="dropdown-item text-uppercase">Memberships</a>
+                  <a href="{% url 'add_class' %}" class="dropdown-item text-uppercase">Classes</a>
                   {% endif %}
                   <a href="{% url 'profile' %}" class="dropdown-item text-uppercase">My Profile</a>
                   <a href="{% url 'account_logout' %}" class="dropdown-item text-uppercase">Logout</a>
@@ -162,6 +163,7 @@
                     {% if request.user.is_superuser %}
                     <a href="{% url 'add_product' %}" class="dropdown-item text-uppercase">Products</a>
                     <a href="{% url 'add_membership' %}" class="dropdown-item text-uppercase">Memberships</a>
+                    <a href="{% url 'add_class' %}" class="dropdown-item text-uppercase">Classes</a>
                     {% endif %}
                     <a href="{% url 'profile' %}" class="dropdown-item text-uppercase">My Profile</a>
                     <a href="{% url 'account_logout' %}" class="dropdown-item text-uppercase">Logout</a>

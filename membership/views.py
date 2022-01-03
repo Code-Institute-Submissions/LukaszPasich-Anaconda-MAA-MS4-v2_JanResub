@@ -92,4 +92,3 @@ def delete_membership(request, membership_id):
     membership.delete()
     messages.success(request, 'Membership deleted!')
     return redirect(reverse('memberships'))
-
