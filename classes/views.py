@@ -37,7 +37,7 @@ def all_classes(request):
 
 @login_required
 def add_class(request):
-    """ A view to add classes """
+    """ A view to add a new class """
     if request.method == "POST":
         form = ClassForm(request.POST)
         if form.is_valid:
@@ -57,10 +57,11 @@ def add_class(request):
 
     return render(request, template, context)
 
+
 # edit not working currently
 @login_required
 def edit_class(request, class_id):
-    """ A view to edit classes """
+    """ A view to edit existing classes """
 
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only website owners can do that')
@@ -88,3 +89,18 @@ def edit_class(request, class_id):
     }
 
     return render(request, template, context)
+
+
+# delete not working currently
+@login_required
+def delete_class(request, class_id):
+    """ A view to delete existing class """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only website owners can do that')
+        return redirect(reverse('home'))
+
+    singleclass = get_object_or_404(Class, pk=class_id)
+    singleclass.delete()
+    messages.success(request, 'Class deleted!')
+    return redirect(reverse('all_classes'))
