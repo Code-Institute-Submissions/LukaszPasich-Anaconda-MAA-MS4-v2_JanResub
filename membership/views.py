@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
 from .models import Membership
 from .forms import MembershipForm
 
@@ -20,8 +21,18 @@ def all_memberships(request):
 
 def add_membership(request):
     """ A view to add new memberships"""
+    if request.method == "POST":
+        form = MembershipForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added membership!')
+            return redirect(reverse('add_membership'))
+        else:
+            messages.error(request, '''Failed to add membership.
+                                       Please ensure the form is valid''')
+    else:
+        form = MembershipForm()
 
-    form = MembershipForm()
     template = 'memberships/add_membership.html'
     context = {
         'form': form,
