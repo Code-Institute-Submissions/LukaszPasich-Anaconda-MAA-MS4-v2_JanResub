@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from .models import Membership
 from .forms import MembershipForm
@@ -36,6 +36,32 @@ def add_membership(request):
     template = 'memberships/add_membership.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_membership(request, membership_id):
+    """ A view to edit existing memberships"""
+    membership = get_object_or_404(Membership, pk=membership_id)
+    if request.method == "POST":
+        form = MembershipForm(request.POST, instance=membership)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated membership!')
+            return redirect(reverse('memberships'))
+        else:
+            messages.error(request, '''Failed to update product.
+                           Please ensure the form is valid.''')
+    else:
+        form = MembershipForm(instance=membership)
+        messages.info(request, f'''You are editing the membership:
+                      {membership.name}''')
+
+    template = 'memberships/edit_membership.html'
+    context = {
+        'form': form,
+        'membership': membership,
     }
 
     return render(request, template, context)
