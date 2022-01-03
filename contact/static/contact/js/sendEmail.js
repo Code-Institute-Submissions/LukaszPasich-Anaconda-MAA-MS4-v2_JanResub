@@ -8,17 +8,19 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            // var flashEmail = document.getElementById("flash-messages-email");
-            // flashEmail.style.display = 'inline-block';
-            // flashEmail.innerHTML = "Message sent successfully";
+            var messageEmail = document.getElementById("email-message-container");
+            var messageEmailBody = document.getElementById("email-message-body");
+            messageEmail.style.display = 'inline-block';
+            messageEmailBody.innerHTML = "Message sent successfully";
         },
         function(error) {
             console.log("FAILED", error);
-            // var flashEmail = document.getElementById("flash-messages-email");
-            // flashEmail.style.display = 'inline-block';
-            // flashEmail.innerHTML = "Message not sent!";
+            var messageEmail = document.getElementById("email-message-container");
+            var messageEmailBody = document.getElementById("email-message-body");
+            messageEmail.style.display = 'inline-block';
+            messageEmailBody.innerHTML = "Message not sent";
         }
     );
-    setTimeout(function(){window.location.reload();},4000);
+    setTimeout(function(){window.location.reload();},4500);
     return false;
 }

@@ -343,6 +343,11 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+#email-message-container {
+    display: none;
+}
+
+
 /* ALLAUTH FORMS */
 
 .allauth-form-inner-content p {
