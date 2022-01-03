@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Membership
 from .forms import MembershipForm
 
@@ -19,8 +20,14 @@ def all_memberships(request):
     return render(request, 'memberships/memberships.html', context)
 
 
+@login_required
 def add_membership(request):
     """ A view to add new memberships"""
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only website owners can do that')
+        return redirect(reverse('home'))
+
     if request.method == "POST":
         form = MembershipForm(request.POST)
         if form.is_valid():
@@ -41,8 +48,14 @@ def add_membership(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_membership(request, membership_id):
     """ A view to edit existing memberships"""
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only website owners can do that')
+        return redirect(reverse('home'))
+
     membership = get_object_or_404(Membership, pk=membership_id)
     if request.method == "POST":
         form = MembershipForm(request.POST, instance=membership)
@@ -67,9 +80,16 @@ def edit_membership(request, membership_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_membership(request, membership_id):
     """ A view to delete existing memberships"""
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only website owners can do that')
+        return redirect(reverse('home'))
+
     membership = get_object_or_404(Membership, pk=membership_id)
     membership.delete()
     messages.success(request, 'Membership deleted!')
     return redirect(reverse('memberships'))
+
