@@ -26,7 +26,7 @@ def add_membership(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully added membership!')
-            return redirect(reverse('add_membership'))
+            return redirect(reverse('memberships'))
         else:
             messages.error(request, '''Failed to add membership.
                                        Please ensure the form is valid''')
@@ -65,3 +65,11 @@ def edit_membership(request, membership_id):
     }
 
     return render(request, template, context)
+
+
+def delete_membership(request, membership_id):
+    """ A view to delete existing memberships"""
+    membership = get_object_or_404(Membership, pk=membership_id)
+    membership.delete()
+    messages.success(request, 'Membership deleted!')
+    return redirect(reverse('memberships'))

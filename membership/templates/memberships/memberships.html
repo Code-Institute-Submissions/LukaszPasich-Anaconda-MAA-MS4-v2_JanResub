@@ -62,7 +62,7 @@
                 {% for membership in memberships %}
                 <div class="col-10 col-sm-6 col-lg-3 text-ddgrey mb-4">
                     <div class="bg-llgrey text-center py-3 px-2 m-2 rounded">
-                        <p class="membership-name py-0 my-0">
+                        <p class="membership-name py-0 my-0 font-weight-bold">
                             {{ membership.name }}
                         </p>
                         <p class="membership-smallname">
@@ -98,6 +98,18 @@
                         </div>
                         <p class="no-fee text-center text-uppercase mt-2 mb-0 text-ddgrey">- No joining fee -</p>
                     </div>
+
+                    <!-- buttons - edit & delete -->
+                    {% if request.user.is_superuser %}
+                    <a class="text-light edit-classes text-decoration-none px-2 ml-2 rounded border border-light small"
+                        href="{% url 'edit_membership' membership.id %}">
+                        Edit
+                    </a>
+                    <a class="text-lred edit-classes text-decoration-none px-2 ml-2 rounded border border-danger small"
+                        href="{% url 'delete_membership' membership.id %}">
+                        Delete
+                    </a>
+                    {% endif %}
                 </div>
                 {% endfor %}
                 
