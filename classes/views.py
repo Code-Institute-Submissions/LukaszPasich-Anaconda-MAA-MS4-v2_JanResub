@@ -16,12 +16,14 @@ def about(request):
 def all_classes(request):
     """ A view to show all classes"""
 
-    mon_classes = Class.objects.all()[:8]
-    tue_classes = Class.objects.all()[8:16]
-    wed_classes = Class.objects.all()[16:24]
-    thu_classes = Class.objects.all()[24:32]
-    fri_classes = Class.objects.all()[32:40]
-    sat_classes = Class.objects.all()[40:48]
+    classes = list(Class.objects.all())
+
+    mon_classes = classes[:8]
+    tue_classes = classes[8:16]
+    wed_classes = classes[16:24]
+    thu_classes = classes[24:32]
+    fri_classes = classes[32:40]
+    sat_classes = classes[40:48]
 
     context = {
         'mon_classes': mon_classes,
@@ -58,7 +60,6 @@ def add_class(request):
     return render(request, template, context)
 
 
-# edit not working currently
 @login_required
 def edit_class(request, class_id):
     """ A view to edit existing classes """
@@ -91,7 +92,6 @@ def edit_class(request, class_id):
     return render(request, template, context)
 
 
-# delete not working currently
 @login_required
 def delete_class(request, class_id):
     """ A view to delete existing class """
