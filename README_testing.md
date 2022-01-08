@@ -221,9 +221,203 @@ Admin user:
 
 <br>
 
+3. #### Footer:
+
+- TEST 3.1 - _Home_ link goes to _Home_ page - YES
+- TEST 3.2 - _About_ link goes to _About_ page - YES
+- TEST 3.3 - _Classes_ link goes to _Classes_ page - YES
+- TEST 3.4 - _Shop_ link goes to _Shop_ page - YES
+- TEST 3.5 - _Contact_ link goes to _Contact_ page - YES
+- TEST 3.6 - _Join Now_ link goes to _Membership_ page - YES
+- TEST 3.7 - _Twitter_ icon opens _Twitter_ home page in new tab - YES
+- TEST 3.8 - _Pinterest_ icon opens _Pinterest_ home page in new tab - YES
+- TEST 3.9 - _Facebook_ icon opens _Facebook_ home page in new tab - YES
+- TEST 3.10 - _Instagram_ icon opens _Instagram_ home page in new tab - YES
+    - TEST 3.11 - _Youtube_ icon opens _Youtube_ home page in new tab - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+4. #### Home Page:
+
+- TEST 4.1 - _Join Our Academy_ button on main banner links to _Membership_ page - YES
+- TEST 4.2 - _Brazilian Jiu-Jitsu_ image links to _Why Brazilian Jiu-Jitsu?_ section in _About_ page - YES
+- TEST 4.3 - _Read more_ link under Brazilian Jiu-Jitsu image links to _Why Brazilian Jiu-Jitsu?_ section in _About_ page - YES
+- TEST 4.4 - _Kickboxing_ image links to _Why Kickboxing?_ section in _About_ page - YES
+- TEST 4.5 - _Read more_ link under Kickboxing image links to _Why Kickboxing?_ section in _About_ page - YES
+- TEST 4.6 - _Boxing_ image links to _Why Boxing?_ section in _About_ page - YES
+- TEST 4.7 - _Read more_ link under Boxing image links to _Why Boxing?_ section in _About_ page - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+5. #### About Page:
+
+- TEST 5.1 - _Join Our Academy_ button in _Why Brazilian Jiu-Jitsu?_ section links to _Membership_ page - YES
+- TEST 5.2 - _About our coaches..._ button in _Why Brazilian Jiu-Jitsu?_ section links to _Meet Our Instructors_ section on the same page - YES
+- TEST 5.3 - _Join Our Academy_ button in _Why Kickboxing?_ section links to _Membership_ page - YES
+- TEST 5.4 - _About our coaches..._ button in _Why Kickboxing?_ section links to _Meet Our Instructors_ section on the same page - YES
+- TEST 5.5 - _Join Our Academy_ button in _Why Boxing ?_ section links to _Membership_ page - YES
+- TEST 5.6 - _About our coaches..._ button in _Why Boxing?_ section links to _Meet Our Instructors_ section on the same page - YES
+- TEST 5.7 - _Brazilian Jiu-Jitsu_ link in _Meet Our Instructors_ section links to _Why Brazilian Jiu-Jitsu?_ section on the same page - YES
+- TEST 5.8 - _About Brazilian Jiu-Jitsu?_ link in _Meet Our Instructors_ section links to _Why Brazilian Jiu-Jitsu?_ section on the same page - YES
+- TEST 5.9 - _Kickboxing_ link in _Meet Our Instructors_ section links to _Why Kickboxing?_ section on the same page - YES
+- TEST 5.10 - _About Kickboxing..._ link in _Meet Our Instructors_ section links to _Why Kickboxing?_ section on the same page - YES
+- TEST 5.11 - _Boxing_ link in _Meet Our Instructors_ section links to _Why Boxing?_ section on the same page - YES
+- TEST 5.12 - _About Boxing..._ link in _Meet Our Instructors_ section links to _Why Boxing?_ section on the same page - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+6. #### Classes Page:
+
+- TEST 6.1 - _See timetable..._ link in _Kids & Teens Classes_ section links to _Class Timetable_ section on the same page - YES
+- TEST 6.2 - _Join Our Academy_ button in _Kids & Teens Classes_ section links to _Membership_ page - YES
+- TEST 6.3 - _See timetable..._ link in _Adults Classes_ section links to _Class Timetable_ section on the same page - YES
+- TEST 6.4 - _Join Our Academy_ button in _Adults Classes_ section links to _Membership_ page - YES
+
+<br>
+
+Admin user:
+- TEST 6.5 - _Edit_ and _Delete_ buttons appear in each class box in _Class Timetable_ section when admin user is logged in - YES
+- TEST 6.6 - _Edit_ button in each class box in _Class Timetable_ section links to the _Edit Class_ page populated with the corresponding class details - YES
+- TEST 6.6 - _Delete_ button in each class box in _Class Timetable_ section deletes the respective class - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+7. #### Shop Page:
+
+- TEST 7.1 - _'Search our site'_ box empty entry reloads the page with all products - relevant 'toast' is displayed - YES
+- TEST 7.2 - _'Search our site'_ search that does not appear in the database reloads the page with no products - relevant 'toast' is displayed - YES
+- TEST 7.3 - _'Search our site'_ search that does appear in the database reloads the page with all products meeting the search criteria entered - relevant 'toast' is displayed - YES
+- TEST 7.4 - _'Sort by Price (low to high)'_ reloads the page with current selection of products in the correct order - YES
+- TEST 7.5 - _'Sort by Price (high to low)'_ reloads the page with current selection of products in the correct order - YES
+- TEST 7.6 - _'Sort by Rating (low to high)'_ reloads the page with current selection of products in the correct order - YES
+- TEST 7.7 - _'Sort by Rating (high to low)'_ reloads the page with current selection of products in the correct order - YES
+- TEST 7.8 - _'Sort by Name (A-Z)'_ reloads the page with current selection of products in the correct order - YES
+- TEST 7.9 - _'Sort by Name (Z-A)'_ reloads the page with current selection of products in the correct order - YES
+- TEST 7.10 - _'Sort by Category (A-Z)'_ reloads the page with current selection of products in the correct order - YES
+- TEST 7.11 - _'Sort by Category (Z-A)'_ reloads the page with current selection of products in the correct order - YES
+- TEST 7.12 - Current count of products loaded works correctly - YES
+- TEST 7.13 - Current count of products loaded _Products Home_ link reloads page with all products - YES
+- TEST 7.14 - Clicking on the 'All' tab above the products displays all products - YES
+- TEST 7.15 - Clicking on the _'Boxing Bags'_ tab above the products displays all products in the 'Boxing Bags' category - YES
+- TEST 7.16 - Clicking on the _'Protective'_ tab above the products displays all products in the 'Protective' category - YES
+- TEST 7.17 - Each product image links to the respective _Product Detail_ page - YES
+- TEST 7.18 - _Join Our Academy_ button at the bottom of the page links to _Membership_ page - YES
+
+<br>
+
+Admin user:
+- TEST 7.16 - _Edit_ and _Delete_ buttons appear underneath each product when admin user is logged in - YES
+- TEST 7.17 - _Edit_ button underneath each product links to the _Edit Product_ page populated with the corresponding product details - YES
+- TEST 7.18 - _Delete_ button underneath each product deletes the respective product - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+8. #### Contact Page:
+
+- TEST 8.1 - _Contact Form_ does not validate on 'Submit' if _'Name'_ field is empty - YES
+- TEST 8.2 - _Contact Form_ does not validate on 'Submit' if _'E-mail'_ field is empty - YES
+- TEST 8.3 - _Contact Form_ does not validate on 'Submit' if _'E-mail'_ entry does not follow the email format (@ missing) - YES
+- TEST 8.4 - _Contact Form_ does not validate on 'Submit' if _'Message'_ field is empty - YES
+- TEST 8.5 - _Contact Form_ is sent successfully if form valid - relevant 'toast' is displayed - YES
+- TEST 8.6 - Message from _Contact Form_ is sent to default email - EmailJS connected correctly - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+9. #### Membership Page
+
+- TEST 9.1 - _Get Started_ button links to _Contact Page_ - YES
+- TEST 9.2 - _See Timetables here_ link goes to _Class Timetable_ of _Classes Page_ - YES
 
 
+<br>
 
+Admin user:
+- TEST 9.3 - _Edit_ and _Delete_ buttons appear underneath each membership box when admin user is logged in - YES
+- TEST 9.5 - _Edit_ button underneath each membership links to the _Edit Membership_ page populated with the corresponding membership details - YES
+- TEST 9.6 - _Delete_ button underneath each membership box deletes the respective membership - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+10. #### Sign Up Page
+
+- TEST 10.1 - _Already have an account?_ link goes to _Sign In_ page - YES
+- TEST 10.2 - _Sign Up Form_ does not validate on 'Submit' ('Sign Up') if any of the fields is empty - YES
+- TEST 10.3 - _Sign Up Form_ does not validate on 'Submit' ('Sign Up') if _'E-mail address'_ entry does not follow the email format (@ missing) - YES
+- TEST 10.4 - _Sign Up Form_ does not validate on 'Submit' ('Sign Up') if _'E-mail address'_ and 'E-mail address confirmation' entries are not the same - YES
+- TEST 10.5 - _Sign Up Form_ does not validate on 'Submit' ('Sign Up') if _'Password'_ entry is too common (ex.password) or too short - YES
+- TEST 10.6 - _Sign Up Form_ does not validate on 'Submit' ('Sign Up') if _'Password'_ and 'Password (again)' entries are not the same - YES
+- TEST 10.7 - _Sign Up Form_ does not validate on 'Submit' ('Sign Up') if user with the same email address is already registered - YES
+- TEST 10.8 - _Sign Up Form_ does not validate on 'Submit' ('Sign Up') if user with the same username is already registered - YES
+- TEST 10.9 - On 'Submit' ('Sign Up') of the validated _Sign Up Form_ the user is redirected to the _Verify Your E-mail Address_ page - relevant 'toast' is displayed - YES
+- TEST 10.10 - On 'Submit' ('Sign Up') of the validated _Sign Up Form_ the link to verify e-mail is sent to the submited e-mail address - YES
+- TEST 10.11 - Verify email address link sent to email works correctly and redirects user to _Confirm E-mail Address_ page - YES
+- TEST 10.12 - Confirming email address on _Confirm E-mail Address_ page takes user to _Sig In_ page - YES
+- TEST 10.13 - Confirming email address on _Confirm E-mail Address_ page creates a new user in the database - YES
+- TEST 10.14 - _Back to Login_ button links to _Sign In_ page - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+11. #### Sign In Page
+
+- TEST 11.1 - _If you don't have account yet..._ link goes to _Sign Up_ page - YES
+- TEST 11.2 - _Sign In Form_ displays Allauth message: 'The username and/or password you specified are not correct.' on 'Submit' ('Sign In'), if either _'Username'_ or _'Password'_ field entries don't match any user saved in the database - YES
+- TEST 11.3 - On 'Submit' ('Sign In') of the validated and correct _Sign In Form_ the user is saved in the session cookie and redirected to the _Home_ page - YES
+- TEST 11.4 - _Home_ button links to _Home_ page - YES
+- TEST 11.5 - _Forgot Password_ link goes to _Password Reset_ page - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+12. #### Add Product Page
+
+Admin user:
+
+- TEST 12.1 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Name'_ field is empty - YES
+- TEST 12.2 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Desccription'_ field is empty - YES
+- TEST 12.3 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Price'_ field is empty - YES
+- TEST 12.4 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Price'_ field entry has different format than digits, max digits: 6, max decimal places: 2 - YES
+- TEST 12.5 - _Select Image_ button allows user to select an image (from own device) and attach it to the product - YES
+- TEST 12.6 - On 'Submit' ('Add Product') of the _Add Product Form_ without image attached to the product, a default placeholder image ('no image') is attached - YES
+- TEST 12.7 - 'Cancel' button links to the _Shop_ page - YES
+- TEST 12.8 - On 'Submit' ('Add Product')of the validated _Add Product Form_ a new product is added to the database - YES
+- TEST 12.9 - On 'Submit' ('Add Product') of the validated _Add Product Form_, the user is redirected to the _Product Details_ page of the newly added product with all information displayed correctly - relevant 'toast' is displayed - YES
+
+<br>
 
 [Back to top](#contents)
 
