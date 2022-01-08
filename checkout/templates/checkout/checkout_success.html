@@ -9,7 +9,13 @@
 <!-- heading -->
 <div class="row justify-content-center bg-dgrey">
     <div class="col-11 col-lg-10">
+
+        {% if from_profile %}
+        <h2 class="px-5 pb-3">Order Details</h2>
+        {% else %}
         <h2 class="px-5 pb-3">Thank you</h2>
+        {% endif %}
+
         <hr class="hr-light">
         <p class="text-light font-weight-light text-center text-sm-left">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
     </div>
