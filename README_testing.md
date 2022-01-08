@@ -131,11 +131,15 @@
 - [9. Membership Page](#membership-page)
 - [10. Sign Up Page](#sign-up-page)
 - [11. Sign In Page](#sign-in-page)
-- [12. Add Product](#add-product-page)
-- [13. Add Membership](#add-membership-page)
-- [14. Add Class](#add-class-page)
+- [12. Add Product Page](#add-product-page)
+- [13. Add Membership Page](#add-membership-page)
+- [14. Add Class Page](#add-class-page)
 - [15. My Profile Page](#my-profile-page)
 - [16. Sign Out Page](#sign-out-page)
+- [17. Product Details Page](#product-details-page)
+- [18. Edit Product Page](#edit-product-page)
+- [19. Edit Membership Page](#edit-membership-page)
+- [20. Edit Class Page](#edit-class-page)
 
 <br>
 
@@ -289,7 +293,7 @@ Admin user:
 
 Admin user:
 - TEST 6.5 - _Edit_ and _Delete_ buttons appear in each class box in _Class Timetable_ section when admin user is logged in - YES
-- TEST 6.6 - _Edit_ button in each class box in _Class Timetable_ section links to the _Edit Class_ page populated with the corresponding class details - YES
+- TEST 6.6 - _Edit_ button in each class box in _Class Timetable_ section links to the _Edit Class_ page populated with the corresponding class details - relevant 'toast' is displayed - YES
 - TEST 6.6 - _Delete_ button in each class box in _Class Timetable_ section deletes the respective class - relevant 'toast' is displayed - YES
 
 <br>
@@ -323,7 +327,7 @@ Admin user:
 
 Admin user:
 - TEST 7.16 - _Edit_ and _Delete_ buttons appear underneath each product when admin user is logged in - YES
-- TEST 7.17 - _Edit_ button underneath each product links to the _Edit Product_ page populated with the corresponding product details - YES
+- TEST 7.17 - _Edit_ button underneath each product links to the _Edit Product_ page populated with the corresponding product details - relevant 'toast' is displayed - YES
 - TEST 7.18 - _Delete_ button underneath each product deletes the respective product - relevant 'toast' is displayed - YES
 
 <br>
@@ -357,7 +361,7 @@ Admin user:
 
 Admin user:
 - TEST 9.3 - _Edit_ and _Delete_ buttons appear underneath each membership box when admin user is logged in - YES
-- TEST 9.5 - _Edit_ button underneath each membership links to the _Edit Membership_ page populated with the corresponding membership details - YES
+- TEST 9.5 - _Edit_ button underneath each membership links to the _Edit Membership_ page populated with the corresponding membership details - relevant 'toast' is displayed - YES
 - TEST 9.6 - _Delete_ button underneath each membership box deletes the respective membership - relevant 'toast' is displayed - YES
 
 <br>
@@ -408,7 +412,7 @@ Admin user:
 Admin user:
 
 - TEST 12.1 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Name'_ field is empty - YES
-- TEST 12.2 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Desccription'_ field is empty - YES
+- TEST 12.2 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Description'_ field is empty - YES
 - TEST 12.3 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Price'_ field is empty - YES
 - TEST 12.4 - _Add Product Form_ does not validate on 'Submit' ('Add Product') if _'Price'_ field entry has different format than digits, max digits: 6, max decimal places: 2 - YES
 - TEST 12.5 - _Select Image_ button allows user to select an image (from own device) and attach it to the product - YES
@@ -425,6 +429,8 @@ Admin user:
 
 13. #### Add Membership Page
 
+Admin user:
+
 - TEST 13.1 - _Add Membership Form_ does not validate on 'Submit' ('Add Membership') if _'Name'_ field is empty - YES
 - TEST 13.2 - _Add Membership Form_ does not validate on 'Submit' ('Add Membership') if _'Price'_ field is empty - YES
 - TEST 13.3 - _Add Membership Form_ does not validate on 'Submit' ('Add Membership') if _'Price'_ field entry has different format than digits, max digits: 3 - YES
@@ -439,6 +445,8 @@ Admin user:
 <br>
 
 14. #### Add Class Page
+
+Admin user:
 
 - TEST 14.1 - _Add Class Form_ does not validate on 'Submit' ('Add Class') if _'Class Name'_ field is empty - YES
 - TEST 14.2 - _Add Class Form_ does not validate on 'Submit' ('Add Class') if _'Class Time'_ field is empty - YES
@@ -455,12 +463,9 @@ Admin user:
 15. #### My Profile Page
 
 - TEST 15.1 - _Order History_ section lists all orders in the database for current user - YES
-- TEST 15.2 - _'Order Number'_ link takes user to the respective order's details (_Thank You_ page) originaly generated for the order - YES
-
-
-- TEST 15.2 - _Update Information_ button links to _Home_ page - YES
-
-- TEST 15.2 - _Update Information_ button links to _Home_ page - YES
+- TEST 15.2 - _'Order Number'_ link in _Order History_ section, takes user to the respective order's _'Order Details'_, which is a _Thank You_ page originaly generated for the order - YES
+- TEST 15.3 - On "Submit' ('Update Information') of the _Delivery Information Form_, updated _User Profile_ is saved in database - YES
+- TEST 15.4 - On "Submit' ('Update Information') of the _Delivery Information Form_, the page refreshes, the form displays updated information - relevant 'toast' is displayed - YES
 
 <br>
 
@@ -468,10 +473,98 @@ Admin user:
 
 <br>
 
-16. #### Sign out Page
+16. #### Sign Out Page
 
 - TEST 16.1 - _Sign Out_ removes user from the session button and redirects to _Home_ page - relevant 'toast' is displayed - YES
 - TEST 16.2 - _Cancel_ button links to _Home_ page - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+17. #### Product Details Page
+
+- TEST 17.1 - _Quantity Adjustment Bar's_ "-" button does not allow values lower than "1" - YES
+- TEST 17.2 - _Quantity Adjustment Bar's_ "+" button does not allow values higher than "99" - YES
+- TEST 17.3 - On "Submit" ("Add to Bag") _Quantity Adjustment Bar_ does not validate manually inserted values below "1" and above "99" - YES
+- TEST 17.4 - _Keep Shopping_ button links to _Shop_ page - YES
+- TEST 17.5 - _Add to Bag_ button adds current product at it's quantity set in _Quantity Adjustment Bar_ to the _Shopping Bag_, the page refreshes - relevant 'toast' is displayed - YES
+- TEST 17.6 - The total value of the _Shopping Bag_ displayed in the Navbar is automatically updated upon adding product(s) to the bag (_Add to Bag_ button) - YES
+
+<br>
+
+Admin user:
+- TEST 17.6 - _Edit_ and _Delete_ buttons appear underneath the product description when admin user is logged in - YES
+- TEST 17.7 - _Edit_ button underneath the product description links to the _Edit Product_ page populated with the corresponding product details - YES
+- TEST 17.8 - _Delete_ button underneath the product description deletes the respective product - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+18. #### Edit Product Page
+
+Admin user:
+
+- TEST 18.1 - _Edit Product Form_ is populated with the correct information - YES
+- TEST 18.2 - _Edit Product Form_ does not validate on 'Submit' ('Update Product') if _'Name'_ field is empty - YES
+- TEST 18.3 - _Edit Product Form_ does not validate on 'Submit' ('Update Product') if _'Description'_ field is empty - YES
+- TEST 18.4 - _Edit Product Form_ does not validate on 'Submit' ('Update Product') if _'Price'_ field is empty - YES
+- TEST 18.5 - _Edit Product Form_ does not validate on 'Submit' ('Update Product') if _'Price'_ field entry has different format than digits, max digits: 6, max decimal places: 2 - YES
+- TEST 18.6 - _Select Image_ button allows user to select an image (from own device) and attach it to the product/replace current image - YES
+- TEST 18.8 - _Remove_ checkbox selected removes image from the product on 'Submit' ('Update Product') - YES
+- TEST 18.9 - On 'Submit' ('Update Product') of the _Edit Product Form_ without image attached to the product, a default placeholder image ('no image') is attached - YES
+- TEST 18.10 - 'Cancel' button links to the _Shop_ page - YES
+- TEST 18.11 - On 'Submit' ('Update Product') of the validated _Edit Product Form_ the product information is updated in the database - YES
+- TEST 18.12 - On 'Submit' ('Update Product') of the validated _Edit Product Form_, the user is redirected to the _Product Details_ page of the just updated product with all information displayed correctly - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+19. #### Edit Membership Page
+
+Admin user:
+
+- TEST 19.1 - _Edit Membership Form_ is populated with the correct information - YES
+- TEST 19.2 - _Edit Membership Form_ does not validate on 'Submit' ('Update Membership') if _'Name'_ field is empty - YES
+- TEST 19.3 - _Edit Membership Form_ does not validate on 'Submit' ('Update Membership') if _'Price'_ field is empty - YES
+- TEST 19.4 - _Edit Membership Form_ does not validate on 'Submit' ('Update Membership') if _'Price'_ field entry has different format than digits, max digits: 3 - YES
+- TEST 19.4 - 'Cancel' button links to the _Membership_ page - YES
+- TEST 19.5 - On 'Submit' ('Update Membership') of the validated _Add Membership Form_ the membership is updated in the database - YES
+- TEST 19.6 - On 'Submit' ('Update Membership') of the validated _Add Membership Form_, the user is redirected to the _Membership_ page with just updated membership displaying correct information - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+20. #### Edit Class Page
+
+Admin user:
+
+- TEST 20.1 - _Edit Class Form_ is populated with the correct information - YES
+- TEST 20.2 - _Edit Class Form_ does not validate on 'Submit' ('Update Class') if _'Class Name'_ field is empty - YES
+- TEST 20.3 - _Edit Class Form_ does not validate on 'Submit' ('Update Class') if _'Class Time'_ field is empty - YES
+- TEST 20.4 - 'Cancel' button links to the _Classes_ page - YES
+- TEST 20.5 - On 'Submit' ('Update Class') of the validated _Edit Class Form_ the Class is updated in the database - YES
+- TEST 20.6 - On 'Submit' ('Update Class') of the validated _Edit Class Form_, the user is redirected to the _Classes_ page with just updated class displaying correct information - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+
+
 
 [Back to top](#contents)
 
