@@ -419,6 +419,60 @@ Admin user:
 
 <br>
 
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+13. #### Add Membership Page
+
+- TEST 13.1 - _Add Membership Form_ does not validate on 'Submit' ('Add Membership') if _'Name'_ field is empty - YES
+- TEST 13.2 - _Add Membership Form_ does not validate on 'Submit' ('Add Membership') if _'Price'_ field is empty - YES
+- TEST 13.3 - _Add Membership Form_ does not validate on 'Submit' ('Add Membership') if _'Price'_ field entry has different format than digits, max digits: 3 - YES
+- TEST 13.4 - 'Cancel' button links to the _Membership_ page - YES
+- TEST 13.5 - On 'Submit' ('Add Membership') of the validated _Add Membership Form_ a new membership is added to the database - YES
+- TEST 13.6 - On 'Submit' ('Add Membership') of the validated _Add Membership Form_, the user is redirected to the _Membership_ page with the new membership rendered on the page - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+14. #### Add Class Page
+
+- TEST 14.1 - _Add Class Form_ does not validate on 'Submit' ('Add Class') if _'Class Name'_ field is empty - YES
+- TEST 14.2 - _Add Class Form_ does not validate on 'Submit' ('Add Class') if _'Class Time'_ field is empty - YES
+- TEST 14.3 - 'Cancel' button links to the _Classes_ page - YES
+- TEST 14.4 - On 'Submit' ('Add Class') of the validated _Add Class Form_ a new Class is added to the database - YES
+- TEST 14.5 - On 'Submit' ('Add Class') of the validated _Add Class Form_, the user is redirected to the _Classes_ page with the new class rendered on the page (if the total of all classes in database is equal to or less than 48) - relevant 'toast' is displayed - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+15. #### My Profile Page
+
+- TEST 15.1 - _Order History_ section lists all orders in the database for current user - YES
+- TEST 15.2 - _'Order Number'_ link takes user to the respective order's details (_Thank You_ page) originaly generated for the order - YES
+
+
+- TEST 15.2 - _Update Information_ button links to _Home_ page - YES
+
+- TEST 15.2 - _Update Information_ button links to _Home_ page - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+16. #### Sign out Page
+
+- TEST 16.1 - _Sign Out_ removes user from the session button and redirects to _Home_ page - relevant 'toast' is displayed - YES
+- TEST 16.2 - _Cancel_ button links to _Home_ page - YES
+
 [Back to top](#contents)
 
 ---
