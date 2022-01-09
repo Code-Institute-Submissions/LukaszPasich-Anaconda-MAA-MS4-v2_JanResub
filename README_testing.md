@@ -22,28 +22,52 @@
 
 ### Automated Testing
 
+<br>
+
+
 - [W3C Markup Validator](https://validator.w3.org/) was used for HTML validation:
-	- _Home page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Flanding) - Errors: 0
-	- _About page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fget_recipes) - Errors: 0
-	- _Classes page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Ffull_recipe) - Errors: 0
-	- _Add Class page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fmy_recipes) - Errors: 0
-	- _Edit Class page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Shop page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Product Details page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Add Product page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Edit Product page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fsignup) - Errors: 0
-	- _Shopping Bag page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fsignup) - Errors: 0
-	- _Checkout page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Flogin) - Errors: 0
-	- _Checkout Success page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontact) - Errors: 0
-	- _Contact page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Memberships page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Add Membership page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Edit Membership page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Profile page_ validator (via direct input, as page password protected) result - Errors: 0
-    - _Login page (allauth)_ validator (via direct input, as page password protected) result - Errors: 0
-    - _Logout page (allauth)_ validator (via direct input, as page password protected) result - Errors: 0
-    - Sign Up page (allauth)_ validator (via direct input, as page password protected) result - Errors: 0
-    - _Confirm Your Email page (allauth)_ validator (via direct input, as page password protected) result - Errors: 0
+
+	Navbar contains the following 3 errors that I didn't have time to fix.
+	
+	Because they are in the navbar they will appear on every page:
+
+	<br>
+
+	Error: 1 & 2 <br>
+	<code>Element li not allowed as child of element div in this context.</code>
+
+	Needs a bit time as just putting &lt;li&gt; inside &lt;ul&gt; was affecting the size of the navbar on mobiles.
+
+	<br>
+
+	Error: 3 <br>
+	<code>Duplicate ID</code>
+
+	This ID works with bootstrap dropdown menu, one ID is displayed on large devices, the other one is on small devices. The workaround needs a bit more 
+	thought.
+
+	<br>
+
+	- _Home page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2F) - Errors: 3
+	- _About page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fclasses%2Fabout%2F) - Errors: 3
+	- _Classes page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fclasses%2Ftimes%2F) - Errors: 3
+	- _Add Class page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fclasses%2Fadd%2F) - Errors: 3
+	- _Edit Class page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fclasses%2Fedit%2F1%2F) - Errors: 3
+	- _Shop page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fproducts) - Errors: 3
+	- _Product Details page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fproducts%2F1%2F) - Errors: 3
+	- _Add Product page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fproducts%2Fadd%2F) - Errors: 3
+	- _Edit Product page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fproducts%2Fedit%2F1) - Errors: 3
+	- _Shopping Bag page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fbag%2F) - Errors: 3
+	- _Checkout page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fcheckout%2F) - Errors: 3
+	- _Checkout Success / Order History page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fprofile%2Forder_history%2FA6B9F939723E49AA97B306EB2DFE5009) - Errors: 3
+	- _Contact page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fcontact%2Fcontact) - Errors: 3
+    - _Memberships page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: RETEST
+    - _Add Membership page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fmemberships%2Fadd%2F) - Errors: 3
+    - _Edit Membership page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fmemberships%2Fedit%2F1%2F) - Errors: 3
+    - _Profile page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fprofile) - Errors: 3
+    - _Logout page (allauth)_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Faccounts%2Flogout%2F) - Errors: 3
+    - _Login page (allauth)_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Faccounts%2Flogin%2F) - Errors: 3
+    - Sign Up page (allauth)_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Faccounts%2Fsignup%2F) - Errors: 3
 
 <br>
 
@@ -54,27 +78,26 @@
 
 	<code>Value Error : color fff is not a color value : fff</code>
 
-	- _Home page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Flanding) - Errors: 0
-	- _About page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fget_recipes) - Errors: 0
-	- _Classes page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Ffull_recipe) - Errors: 0
-	- _Add Class page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fmy_recipes) - Errors: 0
-	- _Edit Class page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Shop page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Product Details page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Add Product page_ validator result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Edit Product page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fsignup) - Errors: 0
-	- _Shopping Bag page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fsignup) - Errors: 0
-	- _Checkout page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Flogin) - Errors: 0
-	- _Checkout Success page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontact) - Errors: 0
-	- _Contact page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Memberships page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Add Membership page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Edit Membership page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Profile page_ validator (via direct input, as page password protected) result - Errors: 0
-    - _Login page (allauth)_ validator (via direct input, as page password protected) result - Errors: 0
-    - _Logout page (allauth)_ validator (via direct input, as page password protected) result - Errors: 0
-    - Sign Up page (allauth)_ validator (via direct input, as page password protected) result - Errors: 0
-    - _Confirm Your Email page (allauth)_ validator (via direct input, as page password protected) result - Errors: 0
+	- _Home page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _About page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fclasses%2Fabout%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Classes page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fclasses%2Ftimes%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Add Class page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fclasses%2Fadd%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Edit Class page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fclasses%2Fedit%2F1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Shop page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fproducts%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Product Details page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fproducts%2F1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Add Product page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fproducts%2Fadd%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Edit Product page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fproducts%2Fedit%2F1&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Shopping Bag page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fbag%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Checkout page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fcheckout%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Checkout Success / Order History page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fprofile%2Forder_history%2FA6B9F939723E49AA97B306EB2DFE5009&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+	- _Contact page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fcontact%2Fcontact&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+    - _Memberships page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fmemberships%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+    - _Add Membership page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fmemberships%2Fadd%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+    - _Edit Membership page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fmemberships%2Fedit%2F1%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+    - _Profile page_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fprofile%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+    - _Logout page (allauth)_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Faccounts%2Flogout%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+    - _Login page (allauth)_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Faccounts%2Flogin%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
+    - Sign Up page (allauth)_ validator result [HERE](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Faccounts%2Fsignup%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) - Errors: 1
 
 <br>
 

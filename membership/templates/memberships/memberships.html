@@ -12,7 +12,7 @@
     <div class="col-12">
         <div> 
             <h1 class="row justify-content-center pb-5 mb-5">
-                <div class="col-auto">Membership</div>
+                <span class="col-auto">Membership</span>
             </h1>
         </div>
     </div>
@@ -46,7 +46,8 @@
                         </div>
                         <hr class="hr-light mx-2">
                         <p class="free-price pb-0 mb-0 pt-2">
-                            <span class="membership-euro"></span>Free</span>
+                            <span class="membership-euro"></span>
+                            Free
                         </p>
                         <p class="membership-payinterval py-0 my-0 mb-3">
                             First Class
@@ -76,7 +77,9 @@
                         <div class="membership-description px-1">
                             {% if membership.all_classes %}
                             <ul class="p-0 m-0">
-                                <p class="text-center">All Classes</p>
+                                <li>
+                                    <p class="text-center">All Classes</p>
+                                </li>
                             </ul>
                             {% else %}
                             <ul>
@@ -88,7 +91,7 @@
                         </div>
                         <hr class="hr-dark mx-2">
                         <p class="membership-price pb-0 mb-0 pt-2">
-                            <span class="membership-euro">&euro;&nbsp;</span>{{ membership.price }}</span>
+                            <span class="membership-euro">&euro;&nbsp;</span><span>{{ membership.price }}</span>
                         </p>
                         <p class="membership-payinterval py-0 my-0 mb-3">
                             {{ membership.pay_interval }}
