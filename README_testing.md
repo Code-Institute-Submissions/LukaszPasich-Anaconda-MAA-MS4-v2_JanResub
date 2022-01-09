@@ -140,6 +140,12 @@
 - [18. Edit Product Page](#edit-product-page)
 - [19. Edit Membership Page](#edit-membership-page)
 - [20. Edit Class Page](#edit-class-page)
+- [21. Shopping Bag Page](#shopping-bag-page)
+- [22. Checkout Page](#checkout-page)
+- [23. Checkout Success Page](#checkout-success-page)
+- [24. Order Details Page](#order-details-page)
+
+
 
 <br>
 
@@ -563,7 +569,100 @@ Admin user:
 
 <br>
 
+21. #### Shopping Bag Page
 
+- TEST 21.1 - The empty _Shopping Bag_ page "-" displays "Your bag is currently empty." message - YES
+- TEST 21.2 - _Quantity Adjustment Bar's_ "-" button does not allow values lower than "1" - YES
+- TEST 21.3 - _Quantity Adjustment Bar's_ "+" button does not allow values higher than "99" - YES
+- TEST 21.4 FAILED - _Update_ button underneath each product does not validate manually inserted values in _Quantity Adjustment Bar_ below "1" and above "99" - NO
+- TEST 21.4 - _Update_ button underneath each product updates corresponding product in the _Shopping Bag_ with the quantity in the _Quantity Adjustment Bar_ relevant 'toast' is displayed - YES
+- TEST 21.5 - _Remove_ button underneath each product deletes corresponding product from the _Shopping Bag_ - YES
+- TEST 21.6 - _Grand Total_ calculated correctly, includes delivery charges where applicable - YES
+- TEST 21.7 - _Keep Shopping_ button links to _Shop_ page - YES
+- TEST 21.8 - "You could get free delivery by spending just ... more" - message displayed below the _Grand Total_ for orders under EUR 50 - YES
+- TEST 21.9 - _Secure Checkout_ button links to _Checkout_ page - YES
+- TEST 21.10 - _Secure Checkout_ button brings full _Shopping Bag_ to _Checkout_ page - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+22. #### Checkout Page
+
+Unregistered user:
+
+- TEST 22.1 - _Order Summary_ shows correct contents of the _Shopping Bag_ - YES
+- TEST 22.2 - _Order Form_ is empty - YES
+- TEST 22.3 - _Create an accout_ and _Login_ links visible - YES
+- TEST 22.4 - _Create an accout_ link goes to _Sign Up_ page - YES
+- TEST 22.5 - _Login_ link goes to _Sign In_ page - YES
+- TEST 22.6 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Full Name'_ field is empty - YES
+- TEST 22.7 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Email Address'_ field is empty - YES
+- TEST 22.8 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Email Address'_ entry is not in email format (@ not included) - YES
+- TEST 22.9 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Phone Number'_ field is empty - YES
+- TEST 22.10 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Street Address 1'_ field is empty - YES
+- TEST 22.11 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Town or City'_ field is empty - YES
+- TEST 22.12 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Country'_ is not chosen - YES
+- TEST 22.13 - On 'Submit' ('Complete Order') of the validated _Order Form_ the new order is created in database - YES
+- TEST 22.14 - On 'Submit' ('Complete Order') of the validated _Order Form_ a new payment is created and succeeds in Stripe - YES
+- TEST 22.15 - On 'Submit' ('Complete Order') of the validated _Order Form_ a payment_intent.succeeded webhook is createdin Stripe - YES
+- TEST 22.16 - On 'Submit' ('Complete Order') of the validated _Order Form_ user is redirected to _Checkout Success_ (_Thank You_) page - relevant 'toast' is displayed - YES
+- TEST 22.17 - On 'Submit' ('Complete Order') of the validated _Order Form_ order confirmation email is sent to the user - YES
+- TEST 22.18 - _Adjust Bag_ button links to _Shopping Bag_ page - YES
+
+<br>
+
+Registered user:
+
+- TEST 22.19- _Order Summary_ shows correct contents of the _Shopping Bag_ - YES
+- TEST 22.20 - _Order Form_ is populated with information from user profile in database - YES
+- TEST 22.21 - _"Save this delivery info to profile"_ checkbox visible - YES
+- TEST 22.22 - Completing Order with _"Save this delivery info to profile"_ checkbox checked will update user profile info with info from _Order Form_ - YES
+- TEST 22.23 - Completing Order with _"Save this delivery info to profile"_ checkbox unchecked will not update user profile info - YES
+- TEST 22.24 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Full Name'_ field is empty - YES
+- TEST 22.25 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Email Address'_ field is empty - YES
+- TEST 22.26 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Email Address'_ entry is not in email format (@ not included) - YES
+- TEST 22.27 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Phone Number'_ field is empty - YES
+- TEST 22.28 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Street Address 1'_ field is empty - YES
+- TEST 22.29 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Town or City'_ field is empty - YES
+- TEST 22.30 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Country'_ is not chosen - YES
+- TEST 22.31 - On 'Submit' ('Complete Order') of the validated _Order Form_ the new order is created in database - YES
+- TEST 22.32 - On 'Submit' ('Complete Order') of the validated _Order Form_ a new payment is created and succeeds in Stripe - YES
+- TEST 22.33 FAILED - On 'Submit' ('Complete Order') of the validated _Order Form_ a payment_intent.succeeded webhook is createdin Stripe - NO
+- TEST 22.34 - On 'Submit' ('Complete Order') of the validated _Order Form_ user is redirected to _Checkout Success_ (_Thank You_) page - relevant 'toast' is displayed - YES
+- TEST 22.35 FAILED - On 'Submit' ('Complete Order') of the validated _Order Form_ order confirmation email is sent to the user - YES
+- TEST 22.36 - _Adjust Bag_ button links to _Shopping Bag_ page - YES
+
+---
+	__NOTE:__
+
+	__Payment tested using below card details:__
+	Card number: 4242 4242 4242 4242
+	Expiry date: any
+	CVC: any
+---
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+23. #### Checkout Success Page
+- TEST 23.1 - _Order Summary_ populated with correct order information - YES
+- TEST 23.2 - _Back to Shop_ button links to _Shop_ page - YES
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+24. #### Order Details Page
+- TEST 24.1 - _Order Summary_ populated with correct order information - YES
+- TEST 24.2 - _Back to Profile_ button links to _My Profile_ page - YES
 
 
 [Back to top](#contents)
