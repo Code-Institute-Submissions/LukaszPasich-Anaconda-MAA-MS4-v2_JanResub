@@ -109,6 +109,8 @@
 
 ### UX Testing
 
+- Link to User Stories Testing - [CLICK HERE](https://docs.google.com/spreadsheets/d/1CIi1zBifp5aBSsgi96vp9oLkrAsZ-a9Hyv3Tw9sNon4/edit?usp=sharing)
+
 <br>
 
 [Back to top](#contents)
@@ -841,9 +843,73 @@ This mirraculously worked, I can't claim that I fully understand how and why, bu
 <br>
 
 1. Webhook Error 500:
-	Currently 
 
+Currently the webhook for payment_intent.succeeded gives response: 200 to not signed in users and signed in users get response: 500.
+
+I couldn't figure where the issue is, I feel that I would need a lot more time for testing to get to the bottom of that problem.
+
+<img src="static/images/ms4-readme-bugnf1.png" alt="Anaconda MAA website overview">
+
+
+The order is created successfully and payment is still created and charged successfully for both signed in and not signed in users.
+
+<br>
+
+2. Email confirmation not sent.
+
+After processing the order and payment, email confirmation is not sent to signed in users. Not signed in users ironically receive email confirmation.
+
+This perhaps is somehow connected to the fact that webhook for successful payment for signed in users also doesn't work but I would need more time to investigate or get help investigating this problem.
+
+<br>
+
+3. Class Timetable is awkward.
+
+Class Timetable is awkward to work with for deleting and adding classes.
+
+Because I needed the classes to display in 6 columns, from Monday to Saturday, I divided the query for all classes in database into 6 lists with 8 elements in each list. Monday column displays first 8 elemnts, Tuesday column displays next 8 elements, and so on. There is only 48 elements diplaying.
+
+<img src="static/images/ms4-readme-bugnf2.png" alt="Anaconda MAA website overview">
+
+Deleting last class in Monday column would shift the first Tuesday class into that position, it would take then editing all classes from Tuesday to Saturday to get the desired order back. Also 49th class can be added, but it will never be dislayed. This way the schedule is best to be amended by editing classes, rather than deleting and adding.
+
+<br>
+
+4. Various CSS issues.
+
+There are some misalignments in element styling that could and should be fixed with more time.
+
+<br>
+
+"-" and "+" buttons in _Shopping Bag_ change height when one of them is deactivated:
+
+<img src="static/images/ms4-readme-bugnf4a.png" alt="Anaconda MAA website overview">
+
+<br>
+
+Elements not perfectly aligned, which is especially visible on smaller screens.
+
+<img src="static/images/ms4-readme-bugnf4b.png" alt="Anaconda MAA website overview">
+
+Margin issues that need some more eleborate rework in order to make sense on both, small and large devices.
+
+<img src="static/images/ms4-readme-bugnf4c.png" alt="Anaconda MAA website overview">
+
+<br>
+
+5. The hover effect on instructor's images in Safari browser is glitchy.
+
+The hover effect (subtle zoom-in) on images of instructors in _Classes_ page is slightly broken in Safari web browser, which must be due to some default browser styles.
+
+<img src="static/images/ms4-readme-bugnf5.png" alt="Anaconda MAA website overview">
 
 <br>
 
 [Back to top](#contents)
+
+---
+---
+
+<br>
+
+[Back to main README file](README.md#contents)

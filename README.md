@@ -907,7 +907,9 @@ The textual content was influenced by or taken from the websites:
 - Contact page main banner - by Thao Le Hoang, downloaded from [www.unsplash.com](https://unsplash.com/photos/XeBk0qF77_4 "www.unsplash.com")
 
 ### Code
-- The whole website relied very heavily on the 'Boutique Ado' tutorial from Code Institute.
+- The whole website relied very heavily on the 'Boutique Ado' tutorial from Code Institute !!  <br>
+It would be impossible to give credit for every piece of code.
+
 - Navigation links hover effect (underline from center) styling - code found on Hover.css website [https://ianlunn.github.io/Hover/#effects](https://ianlunn.github.io/Hover/#effects)
 - _Home_ page - overlay hover effect on 3 images (BJJ, Kickboxing and Boxing) styling - code found on [www.w3schools.com](https://www.w3schools.com/howto/howto_css_image_overlay_title.asp)
 - _Coaches_ page - zoom effect on hover over coaches images styling - code found on [www.w3bits.com](https://w3bits.com/css-image-hover-zoom/)
