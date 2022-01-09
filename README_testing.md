@@ -584,6 +584,7 @@ Admin user:
 - TEST 21.8 - "You could get free delivery by spending just ... more" - message displayed below the _Grand Total_ for orders under EUR 50 - YES
 - TEST 21.9 - _Secure Checkout_ button links to _Checkout_ page - YES
 - TEST 21.10 - _Secure Checkout_ button brings full _Shopping Bag_ to _Checkout_ page - YES
+- TEST 21.11 - Signing out resets the _Shopping bag_ - YES
 
 <br>
 
@@ -643,13 +644,19 @@ Registered user:
 - TEST 22.41 - On page closed before the order has finished processing, a new payment is created and succeeds in Stripe - YES
 - TEST 22.42 - On page closed before the order has finished processing, order confirmation email is sent to the user - YES (the value of the order is EUR0)
 
----
-	__NOTE:__
 
-	__Payment tested using below card details:__
-	Card number: 4242 4242 4242 4242
-	Expiry date: any
-	CVC: any
+---
+
+__NOTE:__
+
+__Payment tested using below card details:__
+
+Card number: 4242 4242 4242 4242
+
+Expiry date: any
+
+CVC: any
+
 ---
 
 <br>
@@ -679,10 +686,44 @@ Registered user:
 <br>
 
 25. #### Toasts
-- TEST 25.1 - Successful login 'toast' - YES
-- TEST 25.2 - Successful login 'toast' - YES
-- TEST 25.3 - Successful sign out 'toast' - YES
-
+- TEST 25.1 - _Sign up_ alert 'toast' - "Confirmation email sent to..." - YES
+- TEST 25.2 - _Sign up_ success 'toast' - "You have confirmed..." - YES
+- TEST 25.3 - _Sign in_ success 'toast' - YES
+- TEST 25.4 - _Sign out_ success 'toast' - YES
+- TEST 25.5 - _Add product_ success 'toast' - YES
+- TEST 25.6 - _Edit product_ alert 'toast' - "You are editing..." - YES
+- TEST 25.7 - _Edit product_ success 'toast' - "...updated successfully" - YES
+- TEST 25.8 - _Delete product_ success 'toast' - YES
+- TEST 25.9 - _Add membership_ success 'toast' - YES
+- TEST 25.10 - _Edit membership_ alert 'toast' - "You are editing..." - YES
+- TEST 25.11 - _Edit membership_ success 'toast' - "...updated successfully" - YES
+- TEST 25.12 - _Delete membership_ success 'toast' - YES
+- TEST 25.9 - _Add class_ success 'toast' - YES
+- TEST 25.10 - _Edit class_ alert 'toast' - "You are editing..." - YES
+- TEST 25.11 - _Edit class_ success 'toast' - "...updated successfully" - YES
+- TEST 25.12 - _Delete class_ success 'toast' - YES
+- TEST 25.13 - _My Profile_ updated success 'toast' - YES
+- TEST 25.14 - _Order Details_ alert 'toast' "This is a past order confirmation..." - YES
+- TEST 25.15 - _Shop search box_ error 'toast' "No search criteria entered" - YES
+- TEST 25.16 - _Shop search box_ error 'toast' "No products found for search criteria entered" - YES
+- TEST 25.17 - _Add to Bag_ product success 'toast' - YES
+- TEST 25.18 - _Add to Bag_ product success 'toast' multiple products displayed in vertical scroll box - YES
+- TEST 25.19 - _Add to Bag_ product success 'toast' - "Go to secure checkout" button links to _Shopping Bag_ page - YES
+- TEST 25.20 - _Add to Bag_ product success 'toast' - shows "Spend ... more for free delivery" message if bag value smaller than EUR 50 - YES
+- TEST 25.21 - _Add to Bag_ product success 'toast' - shows correct _Shopping Bag_ content details - YES
+- TEST 25.22 - Updating product quantity on _Shopping Bag_ page success 'toast' - YES
+- TEST 25.23 - _Complete Order_ success 'toast' - "Order successfully processed..." - YES
+- TEST 25.24 - _Add product_ by non admin user via manually entering URL - error 'toast' - YES
+- TEST 25.25 - _Edit product_ by non admin user via manually entering URL - error 'toast' - YES
+- TEST 25.26 - _Delete product_ by non admin user via manually entering URL - error 'toast' - YES
+- TEST 25.24 - _Add membership_ by non admin user via manually entering URL - error 'toast' - YES
+- TEST 25.25 - _Edit membership_ by non admin user via manually entering URL - error 'toast' - YES
+- TEST 25.26 - _Delete membership_ by non admin user via manually entering URL - error 'toast' - YES
+ TEST 25.27 - _Add class_ by non admin user via manually entering URL - error 'toast' - YES
+- TEST 25.28 - _Edit class_ by non admin user via manually entering URL - error 'toast' - YES
+- TEST 25.29 - _Delete class_ by non admin user via manually entering URL - error 'toast' - YES
+- TEST 25.30 - _Contact Form_ JS executed success 'toast' - "Message sent successfully"  - YES
+- TEST 25.31 - "X" button closes toast - YES
 
 <br>
 
