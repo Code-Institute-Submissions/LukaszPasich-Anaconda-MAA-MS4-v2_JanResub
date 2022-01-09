@@ -108,16 +108,12 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 	- Join now - links to page with all membership options
 	- Bag total - displays current shopping bag value
 	
-	Navigation links have _underline from center_ hover effect taken from Hover.css website (see [Credits/ Code section](#code)).
+	Navigation links have _underline from center_ hover effect taken from Hover.css website.
 	There is no effect for active navigation link, the headline of the header banner is sufficient to indicate the page that the user is in.
 
 	The Navigation bar's position is fixed to allow for quick navigation between pages.
 	
 	On mobile devices the logo collapses into hamburger menu.
-
-	<img src="assets/images_readme/ms1-readme-features-navbardesktop.png" alt="Anaconda MAA website navbar on desktops">
-
-	<img src="assets/images_readme/ms1-readme-features-navbarphone.png" alt="Anaconda MAA website navbar on phone">
 	
 <br>
 
@@ -130,17 +126,11 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 	- Navigation links - stacked in a column, same navigation links as in navigation bar
 	- Social media links - links to Twitter, Pinterest, Facebook, Instagram and Youtube will have to be linked later to the academy's' actual pages in the respective channels.
 
-	<img src="assets/images_readme/ms1-readme-features-footerdesktop.png" alt="Anaconda MAA website footer on desktops">
-
-	<img src="assets/images_readme/ms1-readme-features-footerphone.png" alt="Anaconda MAA website footer on phone">
-
 <br>
 
 3. Home page
 
 	The _Home_ page features a main banner with headline and call to action button to join the Academy. Below the banner is the quick overview of disciplines that the Academy offers classes in: Brazilian Jiu-Jitsu, Kickboxing and Boxing, and an invitation to read more about them on the _About_ page.
-
-	<img src="assets/images_readme/ms1-readme-features-home.png" alt="Anaconda MAA website - Home page">
 
 <br>
 
@@ -150,25 +140,17 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 	Each of the martial arts sections has __'Join Our Academy'__ call to action button and an additional link to _Coaches_ section, each of the instructors sections has in turn link back to information about the discipline they are teaching.
 
-	<img src="assets/images_readme/ms1-readme-features-about.png" alt="Anaconda MAA website - About page">
-
 <br>
 
 5. Classes page
 
 	The _Classes_ page, apart from the main banner, features two sections (Kids & Teens Classes and Adults Classes) explaining division of classes into different age and skill level groups. There is also __'Join Our Academy'__ call to action button and an additional link to the Class Timetable with each section. The Class Timetable is the last section on this page.
 
-	<img src="assets/images_readme/ms1-readme-features-classes.png" alt="Anaconda MAA website - Classes page">
-
 <br>
 
 6. Contact page
 
 	The _Contact_ page contains Contact Form to send email to the academy.
-
-	(! email currenty not setup)
-
-	<img src="assets/images_readme/ms1-readme-features-contact.png" alt="Anaconda MAA website - Contact page">
 
 <br>
 
@@ -179,26 +161,12 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 	- Email address *
 	- Phone number
 	- The message *
-	
-	(! the online form is not connected to email or any back-end support at the moment)
-
-	---
-	__NOTE:__
-
-	__! The website should not be deployed in the custom hosted environment before the online query form back-end functionality is added.
-	If deploying before, the appropriate disclaimer information should be added beside the form or the form should be removed (commented out) for the time being !__
-	
-	---
-
-	<img src="assets/images_readme/ms1-readme-features-contactform.png" alt="Anaconda MAA website - Contact page online query form">
 
 <br>
 
 8. Membership page
 
 	The _Membership_ page is accessed via __Join Now__ button in the navbar or __Join Our Academy__ call to action button anywhere else in the website. The page has 4 boxes representing different membership options, one of them is a distinctive looking offer of a free introductory class. Each box has a __Get Started__ button that links to _Contact_ page at the moment, expecting visitors to get in touch with the academy through contact channels given on that page in order to sign up and pay for membership.
-
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
 
 <br>
 
@@ -212,8 +180,6 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 	- Password confirmation *
 
 	On submitting the form (Sign up) the user is taken to _Verify your email_ page, with the toast 'Alert!' being displayed informing user that the email has been sent to the submited email address with the link to verify the user's email address.
-
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
 	
 <br>
 
@@ -227,18 +193,11 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 	On submitting the form (Sign in), the user is taken to the _Home_ page and a 'Success!' toast is displayed to confirm the successful login. Furthermore, a user icon is displayed above the _Account_ link in the navbar, indicating that a user is currently signed in.
 
-	Below the the _login_ form a link to retrieve the _forgotten password_ is provided.
-
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
-	
-
 <br>
 
 11. Account - Logout page
 
 	The _Logout_ page is accessible from the navbar _Account_ dropdown menu, if user is currently signed in. On successful sign out the 'Success!' toast is displayed and the user is taken to the _Home_ page.
-
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
 
 <br>
 
@@ -258,13 +217,10 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 	On submitting this form, the 'Success!' toast pops up and the page reloads with the information updated.
 
 	Order history contains the following information:
-	- Order number - links to the order confirmation originally generated, with more details of the order (a toast 'Alert!' informs user that this os the past order)
+	- Order number - links to the order confirmation originally generated, with more details of the order (a toast 'Alert!' informs user that this is the past order)
 	- Order date
 	- Items purchased
 	- Order total
-
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
-
 
 <br>
 
@@ -281,11 +237,36 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 	On submitting this form, the 'Success!' toast pops - the new product has been added to the database and the admin user is redirected to the _Product View_ page with the preview of the newly added product.
 
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
+<br>
+
+13. Account - Add Membership page
+
+	The _Add Membership_ page allows admin user to add new memberships to the database and is accessible from the navbar _Account_ dropdown menu, only by admin user who is currently signed in. The page contains the form with the following product details to fill in (* fields are required):
+	- Discipline (Choose from dropdown)
+	- Membership no.
+	- Name *
+	- Small name
+	- All classes checkbox
+	- Price *
+	- Pay interval
+
+	On submitting this form, the 'Success!' toast pops - the new membership has been added to the database and the admin user is redirected to the _Membership_ page.
 
 <br>
 
-13. Shop page
+14. Account - Add Class page
+
+	The _Add Class_ page allows admin user to add new class to the database and is accessible from the navbar _Account_ dropdown menu, only by admin user who is currently signed in. The page contains the form with the following product details to fill in (* fields are required):
+	- Class Name *
+	- Class Time *
+	- Class Type
+	- Class Level
+
+	On submitting this form, the 'Success!' toast pops - the new vlass has been added to the database and the admin user is redirected to the _Classes_ page.
+
+<br>
+
+15. Shop page
 
 	Displays all products in the website's database on a responsive grid. Each product is represented by a box containing below details:
 	
@@ -307,18 +288,16 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 	More categories and more products should be added to complete the full offer.
 	___
 
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
-
 <br>
 
-14. Product search bar
+16. Product search bar
 
 	Product search bar appears on the _Shop_ page. It allows for searching for products based on the keyword(s) entered into the search bar (keywords searched in the category, name and description of the products).
 	An 'Error!' toast pops up if search is performed with no search criteria entered or the search criteria was not found.
 
 <br>
 
-15. Sort by...
+17. Sort by...
 
 	_Sort by_ box appears on the _Shop_ page. It allows for sorting of the current selection of the products on the page (can be all products or products filtered by keyword or category).
 	
@@ -330,7 +309,7 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 <br>
 
-16. Product View page
+18. Product View page
 
 	Individual _Product View_ page is accessed from the _Shop_ page after clicking on any product. This page contains similar details to the _Shop_ page with some expansions:
 	- Image (bigger than on the _Shop_ page)
@@ -345,11 +324,9 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 	_Add to Bag_ button ads the currently viewed product and it's selected quantity to the shopping bag. The 'Success!' toast with full current details of the shopping bag is displayed.
 
-	<img src="assets/images_readme/ms1-readme-features-favicon.png" alt="Anaconda MAA website - favicon">
-
 <br>
 
-17. Edit Product page
+19. Edit Product page
 
 	The _Edit Product_ page is available only to admin user and allows admin user to edit existing products and update these edits in database. Editing the product is available from the _Shop_ page or _Product View_ page. The page contains the same form as the _Add Product_ page, with all the fields populated with current product information.
 
@@ -357,11 +334,9 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 	On submitting this form (Update product), the 'Success!' toast pops - the product has been updated in the database and the admin user is redirected to the _Product View_ page with the preview of the updated product.
 
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
-
 <br>
 
-18. _Delete Product_ functionality
+20. _Delete Product_ functionality
 
 	_Delete Product_ functionality is available only to admin user and allows admin user to delete existing product from the database.
 	Deleting the product is available from the _Shop_ page or _Product View_ page.
@@ -377,7 +352,59 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 <br>
 
-19. _Shopping Bag_ page and functionality
+21. Edit Membership page
+
+	The _Edit Membership_ page is available only to admin user and allows admin user to edit existing memberships and update these edits in database. Editing the membership is available from the _Membership_ page. The page contains the same form as the _Add Membership_ page, with all the fields populated with current membesrhip information.
+
+	When accesing the _Edit Membership_ page an 'Alert!' toast pops up to remind the user that this action will change membership information.
+
+	On submitting this form (Update Membership), the 'Success!' toast pops - the membership has been updated in the database and the admin user is redirected to the _Membership_ page.
+
+<br>
+
+22. _Delete Membership_ functionality
+
+	_Delete Membership_ functionality is available only to admin user and allows admin user to delete existing membership from the database.
+	Deleting the membership is available from the _Membership' page.
+	
+	---
+	__WARNING!__
+	
+	Currently there is no confirmation of deleting the membership required, so once the _Delete_ button is clicked on, the membership is instantly erased from database. This will need to be corrected at the soonest opportunity.
+
+	---
+
+	On successful _Delete_ a 'Success!' toast pops up.
+
+<br>
+
+21. Edit Class page
+
+	The _Edit Class_ page is available only to admin user and allows admin user to edit existing class and update these edits in database. Editing the class is available from the _Classes_ page. The page contains the same form as the _Add Class_ page, with all the fields populated with current class information.
+
+	When accesing the _Edit Class_ page an 'Alert!' toast pops up to remind the user that this action will change class information.
+
+	On submitting this form (Update Class), the 'Success!' toast pops - the class has been updated in the database and the admin user is redirected to the _Classes_ page.
+
+<br>
+
+23. _Delete Class_ functionality
+
+	_Delete Class_ functionality is available only to admin user and allows admin user to delete existing class from the database.
+	Deleting the class is available from the _Classes' page.
+	
+	---
+	__WARNING!__
+	
+	Currently there is no confirmation of deleting the class required, so once the _Delete_ button is clicked on, the class is instantly erased from database. This will need to be corrected at the soonest opportunity.
+
+	---
+
+	On successful _Delete_ a 'Success!' toast pops up.
+
+<br>
+
+24. _Shopping Bag_ page and functionality
 
 	_Shopping Bag_ page contains the list of products that have been added to the bag in the single continued session (not ended with payment). The products are subtotalled individually and the grand total is calculated at the bottom of the page. 
 
@@ -390,12 +417,9 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 	---
 
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
-
-
 <br>
 
-20. _Checkout_ page and functionality
+25. _Checkout_ page and functionality
 
 	_Checkout_ page is the last step before confirming the payment in the Anaconda academy shop. The page contains the summary overview of the shopping bag with the grand total and a form with personal, delivery and payment details.
 
@@ -414,18 +438,9 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 	On submitting the form (Complete Order), the payment is being processed through Stripe, the 'Success!' toast pops up and the user is taken to the _Thank You_ page with full details order confirmation.
 
-	---
-	__NOTE!__
-
-	The order confirmation email is currently not being sent. This needs to be fixed at the soonest opportunity.
-
-	---
-
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
-
 <br>
 
-21. Order confirmation _Thank You_ page
+26. Order confirmation _Thank You_ page
 
 	This page contains full order summary of the order just processed.
 	- Order info:
@@ -446,18 +461,15 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 		- Delivery
 		- Grand total
 
-
-	<img src="assets/images_readme/ms1-readme-features-prices.png" alt="Anaconda MAA website - Times & Prices page">
-
 <br>
 
-22. _Stripe_ payment functionality
+27. _Stripe_ payment functionality
 
 	_Stripe_ is setup for processing the payment on the website. Webhooks are connected to ensure that the order is accounted for at the point of clicking on _Complete Order_ button on _Checkout_ page and is going to be processed even if the connection with website is broken suddenly.
 
 <br>
 
-23. Toasts
+28. Toasts
 
 	Toasts are connected to _messages_ in views and they pass on the messages of success, info, warnings and errors.
 	
@@ -465,11 +477,7 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 
 <br>
 
-24. Toasts
 
-	Toasts are connected to _messages_ in views and they pass on the messages of success, info, warnings and errors.
-
-	<img src="assets/images_readme/ms1-readme-features-favicon.png" alt="Anaconda MAA website - favicon">
 
 <br>
 <br>
@@ -485,7 +493,7 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 - Add Google maps with a marker on contact page.
 - Add members testimonials page.
 - Online Free Trial Class booking - a feature allowing users to pick the class date and time in the online calendar and have the class automatically booked, with confirmation email automatically sent to user.
-
+- 400 Errors handling
 
 <br>
 
@@ -621,11 +629,13 @@ Prototype for desktop only created.
 - [GitPod](https://gitpod.io/workspaces/) was used for version control.
 - [Heroku](https://heroku.com) was used for website deployment.
 - [Stripe](https://stripe.com/ie) was used for processing online payments.
+- [Amazon Web Services](https://signin.aws.amazon.com/) S3 Bucket service was used for collecting and storing websites static files, including images.
+- [EmailJS](https://www.emailjs.com/) was used for sending emails to Academy via contact form on Contact page.
+- [Django Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/) was used to generate django key to enable automatic deploys to Heroku
 - [Adobe Indesign](https://balsamiq.com) was used to create low fidelity wireframes.
 - [Adobe XD](https://www.adobe.com/ie/products/xd.html) was used to build the high fidelity prototypes.
 - [Adobe Illustrator](https://www.adobe.com/ie/products/illustrator.html) was used to create logo.
 - [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) was used to edit, crop and save images.
-- [Am I Responsive](http://ami.responsivedesign.is) was used to create the images of each page displayed on different screen sizes in this _Readme_ file.
 
 ### Libraries and frameworks
 - [Django](https://www.djangoproject.com/) - a high-level Python framework was used to develop the website. It provided framework for easy implementation and use of data models, views and URL's, templates, forms, authentication and provided admin function.
@@ -837,6 +847,24 @@ Go to Heroku _Settings_ tab, _Reveal Config Vars_ and add a new _Config Var_ wit
 	```
 	DEBUG = 'DEVELOPMENT' in os.environ
 	```
+
+---
+__NOTE!__
+
+Remember to set environment variables in Heroku:
+
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- DATABASE_URL
+- EMAIL_HOST_PASSWORD
+- EMAIL_HOST_USER
+- SECRET_KEY
+- STRIPE_PUBLIC_KEY
+- STRIPE_SECRET_KEY
+- STRIPE_WH_SECRET
+- USE_AWS
+
+---
 
 <br>
 
