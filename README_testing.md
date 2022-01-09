@@ -144,6 +144,8 @@
 - [22. Checkout Page](#checkout-page)
 - [23. Checkout Success Page](#checkout-success-page)
 - [24. Order Details Page](#order-details-page)
+- [25. Toasts](#toasts)
+
 
 
 
@@ -607,33 +609,39 @@ Unregistered user:
 - TEST 22.12 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Country'_ is not chosen - YES
 - TEST 22.13 - On 'Submit' ('Complete Order') of the validated _Order Form_ the new order is created in database - YES
 - TEST 22.14 - On 'Submit' ('Complete Order') of the validated _Order Form_ a new payment is created and succeeds in Stripe - YES
-- TEST 22.15 - On 'Submit' ('Complete Order') of the validated _Order Form_ a payment_intent.succeeded webhook is createdin Stripe - YES
+- TEST 22.15 - On 'Submit' ('Complete Order') of the validated _Order Form_ a payment_intent.succeeded webhook is created in Stripe - YES
 - TEST 22.16 - On 'Submit' ('Complete Order') of the validated _Order Form_ user is redirected to _Checkout Success_ (_Thank You_) page - relevant 'toast' is displayed - YES
 - TEST 22.17 - On 'Submit' ('Complete Order') of the validated _Order Form_ order confirmation email is sent to the user - YES
 - TEST 22.18 - _Adjust Bag_ button links to _Shopping Bag_ page - YES
+- TEST 22.19 - On page closed before the order has finished processing, the new order is created in database - YES
+- TEST 22.20 - On page closed before the order has finished processing, a new payment is created and succeeds in Stripe - YES
+- TEST 22.21 - On page closed before the order has finished processing, order confirmation email is sent to the user - YES
 
 <br>
 
 Registered user:
 
-- TEST 22.19- _Order Summary_ shows correct contents of the _Shopping Bag_ - YES
-- TEST 22.20 - _Order Form_ is populated with information from user profile in database - YES
-- TEST 22.21 - _"Save this delivery info to profile"_ checkbox visible - YES
-- TEST 22.22 - Completing Order with _"Save this delivery info to profile"_ checkbox checked will update user profile info with info from _Order Form_ - YES
-- TEST 22.23 - Completing Order with _"Save this delivery info to profile"_ checkbox unchecked will not update user profile info - YES
-- TEST 22.24 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Full Name'_ field is empty - YES
-- TEST 22.25 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Email Address'_ field is empty - YES
-- TEST 22.26 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Email Address'_ entry is not in email format (@ not included) - YES
-- TEST 22.27 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Phone Number'_ field is empty - YES
-- TEST 22.28 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Street Address 1'_ field is empty - YES
-- TEST 22.29 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Town or City'_ field is empty - YES
-- TEST 22.30 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Country'_ is not chosen - YES
-- TEST 22.31 - On 'Submit' ('Complete Order') of the validated _Order Form_ the new order is created in database - YES
-- TEST 22.32 - On 'Submit' ('Complete Order') of the validated _Order Form_ a new payment is created and succeeds in Stripe - YES
-- TEST 22.33 FAILED - On 'Submit' ('Complete Order') of the validated _Order Form_ a payment_intent.succeeded webhook is createdin Stripe - NO
-- TEST 22.34 - On 'Submit' ('Complete Order') of the validated _Order Form_ user is redirected to _Checkout Success_ (_Thank You_) page - relevant 'toast' is displayed - YES
-- TEST 22.35 FAILED - On 'Submit' ('Complete Order') of the validated _Order Form_ order confirmation email is sent to the user - YES
-- TEST 22.36 - _Adjust Bag_ button links to _Shopping Bag_ page - YES
+- TEST 22.22- _Order Summary_ shows correct contents of the _Shopping Bag_ - YES
+- TEST 22.23 - _Order Form_ is populated with information from user profile in database - YES
+- TEST 22.24 - _"Save this delivery info to profile"_ checkbox visible - YES
+- TEST 22.25 - Completing Order with _"Save this delivery info to profile"_ checkbox checked will update user profile info with info from _Order Form_ - YES
+- TEST 22.26 - Completing Order with _"Save this delivery info to profile"_ checkbox unchecked will not update user profile info - YES
+- TEST 22.27 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Full Name'_ field is empty - YES
+- TEST 22.28 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Email Address'_ field is empty - YES
+- TEST 22.29 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Email Address'_ entry is not in email format (@ not included) - YES
+- TEST 22.30 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Phone Number'_ field is empty - YES
+- TEST 22.31 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Street Address 1'_ field is empty - YES
+- TEST 22.32 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Town or City'_ field is empty - YES
+- TEST 22.33 - _Order Form_ does not validate on 'Submit' ('Complete Order') if _'Country'_ is not chosen - YES
+- TEST 22.34 - On 'Submit' ('Complete Order') of the validated _Order Form_ the new order is created in database - YES
+- TEST 22.35 - On 'Submit' ('Complete Order') of the validated _Order Form_ a new payment is created and succeeds in Stripe - YES
+- TEST 22.36 FAILED - On 'Submit' ('Complete Order') of the validated _Order Form_ a payment_intent.succeeded webhook is created in Stripe - NO
+- TEST 22.37 - On 'Submit' ('Complete Order') of the validated _Order Form_ user is redirected to _Checkout Success_ (_Thank You_) page - relevant 'toast' is displayed - YES
+- TEST 22.38 FAILED - On 'Submit' ('Complete Order') of the validated _Order Form_ order confirmation email is sent to the user - YES
+- TEST 22.39 - _Adjust Bag_ button links to _Shopping Bag_ page - YES
+- TEST 22.40 FAILED - On page closed before the order has finished processing, the new order is created in database - NO (the value of the order is EUR0 in database)
+- TEST 22.41 - On page closed before the order has finished processing, a new payment is created and succeeds in Stripe - YES
+- TEST 22.42 - On page closed before the order has finished processing, order confirmation email is sent to the user - YES (the value of the order is EUR0)
 
 ---
 	__NOTE:__
@@ -664,6 +672,23 @@ Registered user:
 - TEST 24.1 - _Order Summary_ populated with correct order information - YES
 - TEST 24.2 - _Back to Profile_ button links to _My Profile_ page - YES
 
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
+
+25. #### Toasts
+- TEST 25.1 - Successful login 'toast' - YES
+- TEST 25.2 - Successful login 'toast' - YES
+- TEST 25.3 - Successful sign out 'toast' - YES
+
+
+<br>
+
+[Back to Manual Testing Contents](#manual-testing-contents)
+
+<br>
 
 [Back to top](#contents)
 
