@@ -49,17 +49,17 @@
         <!-- Logo -->
         <div class="col-1 col-md-3 my-auto mx-auto py-1">
           <a href="{% url 'home' %}">
-            <img src="{% static 'images/anaconda-logo-white-color.svg' %}" class="logo my-3">
+            <img src="{% static 'images/anaconda-logo-white-color.svg' %}" alt="Anaconda MAA logo" class="logo my-3">
           </a>
         </div>
         
         <!-- Nav links -->
         <div class="col-10 col-md-8 my-auto text-right py-1 px-5">
           <ul class="list-inline list-unstyled">
-            <a href="{% url 'about' %}" class="d-inline text-decoration-none text-light text-uppercase my-0 px-2 hvr-underline-from-center">About</a>
-            <a href="{% url 'all_classes' %}" class="d-inline text-decoration-none text-light text-uppercase my-0 px-2 hvr-underline-from-center">Classes</a>
-            <a href="{% url 'products' %}" class="d-inline text-decoration-none text-light text-uppercase my-0 px-2 hvr-underline-from-center">Shop</a>
-            <a href="{% url 'contact' %}" class="d-inline text-decoration-none text-light text-uppercase my-0 px-2 hvr-underline-from-center">Contact</a>
+            <li class="d-inline"><a href="{% url 'about' %}" class="text-decoration-none text-light text-uppercase my-0 px-2 hvr-underline-from-center">About</a></li>
+            <li class="d-inline"><a href="{% url 'all_classes' %}" class="text-decoration-none text-light text-uppercase my-0 px-2 hvr-underline-from-center">Classes</a></li>
+            <li class="d-inline"><a href="{% url 'products' %}" class="text-decoration-none text-light text-uppercase my-0 px-2 hvr-underline-from-center">Shop</a></li>
+            <li class="d-inline"><a href="{% url 'contact' %}" class="text-decoration-none text-light text-uppercase my-0 px-2 hvr-underline-from-center">Contact</a></li>
 
             <!-- Accounts link -->
             <li class="list-inline-item my-0 px-2 dropdown">
@@ -119,7 +119,7 @@
         <!-- Logo mobile -->
         <div class="col-5 my-auto mx-auto">
           <a href="{% url 'home' %}">
-            <img src="{% static 'images/anaconda-logo-white-color.svg' %}" class="logo my-1">
+            <img src="{% static 'images/anaconda-logo-white-color.svg' %}" class="logo my-1" alt="Anaconda MAA logo">
           </a>
         </div>
 
