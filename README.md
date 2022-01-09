@@ -7,7 +7,7 @@ Members can practice one chosen discipline or get involved with the whole MMA su
 The school accepts new members across all ages (in BJJ classes, kids can start as early as the age of 4) and various skill levels from Beginners to Advanced.
 As 'Anaconda' academy is growing in members, they would like to automatise the process of signing up for memberships to and they would like to add a small e-commerce on their website to sell their branded merchandise.
 
-<img src="images_readme/ms1-readme-overview.png" alt="Anaconda MAA website overview">
+<img src="static/images/ms4-readme-overview.jpg" alt="Anaconda MAA website overview">
 
 # Link to live project - [CLICK HERE](https://anacondamaa2.herokuapp.com/)
 

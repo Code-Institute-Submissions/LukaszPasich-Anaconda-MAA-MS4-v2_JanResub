@@ -738,9 +738,111 @@ CVC: any
 <br>
 
 ### Bugs
+
+<br>
+
+This project was actually plagued with issues and it's difficult to document every sigle problem I had over the months I was working on it.
+
+Here are some of the problems that took me some time to work out:
+
+<br>
+
 #### Bugs Fixed
 
+<br>
+
+1. Webhook Errors:
+
+- Webhook Error 401:
+	
+	I couldn't get rid of this error for a while, I looked through my code for typos and checked if my webhook key is being set correctly.
+
+	I found somebody having similar problem on Slack and had this suggestion that I haven't seen anywhere else: "Set Gitpod space to 'Share'". It worked for this error.
+
+		Solution:
+		
+		Set Gitpod space to 'Share'.
+
+<br>
+
+- Webhook Error 302:
+	
+	After a while I satrted getting this new error, that I couldn't figure out the reason for, especially that webhooks were working before, I read on internet (sorry, didn't save the source) that Gitpod changed URLs for workspaces overnight.
+
+		Solution:
+		
+		Update URL for webhook to listen for in Stripe to the new Gitpod work space URL.
+
+<br>
+
+2. Reverse for 'edit_class' with arguments '(",)' not found:
+
+	I couldn't get this view to render template wit _Edit Class form_.
+	I spent 2 days looking through my code and trying to compare it to 'edit_product' and 'edit_membership' views that were working fine, I couldn't find the mistake.
+	
+	<img src="static/images/ms4-readme-bug2.png" alt="Anaconda MAA website overview">
+
+	I got in touch with tutors and one of them helped me to identify issue. In the context of my 'edit_class' view I was passing variable 'singleclass' representing the class clicked on (pk=class_id):
+
+	<code>context = { 'form': form, 'singleclass': singleclass,}</code>
+
+	But the url in my template was looking to render edit_class.html template passing the 'class.id' instead of 'singleclass.id': 
+
+	<code>action="{% url 'edit_class' class.id %}"</code>
+
+		Solution:
+		
+		Change argument passed in the url address to the same name as the one passed in the context of the view. In this case it should have been:
+
+		action="{% url 'edit_class' singleclass.id %}"
+
+	The reason, why this simple error took me so much time was my fundamental misunderstanding of what gets passed where between views, urls and templates. With the tutor's help I've learnt something more about Django.
+
+<br>
+
+3. Push to Heroku rejected, source repository is a shallow clone.
+
+This issue nearly gave me a heart attack :) as I'm not that proficient in git, I was expecting this to be a complete disaster when I saw it. 
+
+<br>
+
+<img src="static/images/ms4-readme-bug3.png" alt="Anaconda MAA website overview">
+
+<br>
+
+As my first incomplete submission of MS4 was being graded, I knew I needed to keep on working on it, so I made the clone of the repository to continue work. When the time came to push that clone to Heroku, I saw this error: "Push rejected, source repository is a shallow clone".
+
+I have unshallowed it as per instructions in the console, and pushed it again:
+
+<code>$ git fetch --all --unshallow</code>
+
+<code>$ git push heroku main</code>
+
+After some additional build up in the console, it didn't work, I've spent some time in Google looking for more clues, and I did after that:
+
+<code>$ git fetch --unshallow</code>
+
+This mirraculously worked, I can't claim that I fully understand how and why, but it worked.
+
+	Solution:
+		
+	$ git fetch --all --unshallow
+	$ git push heroku main
+	$ git fetch --unshallow
+	$ git push heroku main
+
+
+<br>
+<br>
+
+
 #### Bugs not Fixed
+
+<br>
+
+1. Webhook Error 500:
+	Currently 
+
 
 <br>
 
