@@ -7,3 +7,4 @@ def contact(request):
     """ Contact page view """
 
     return render(request, 'contact/contact.html')
+

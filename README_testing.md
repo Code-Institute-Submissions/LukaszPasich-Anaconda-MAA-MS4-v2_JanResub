@@ -102,49 +102,98 @@
 <br>
 
 - [JSHint](https://jshint.com/) was used for JavaScript validation (New JavaScript features (ES6) and jQuery were selected in configuration):
-    - script.js - JavaScript validation - Errors: 0
-	- sendEmail.js - JavaScript validation - Errors: 0
+
+	JS Files:
+	- stripe_elements.js - JavaScript validation:
+	
+		<code>One undefined variable: Stripe</code>
+
+		I'm going to ignore this as it comes from Stripe documentation
+	
+	<br>
+
+	- sendEmail.js - JavaScript validation:
+
+		<code>One undefined variable: emaijs</code>
+
+		<code>One unused variable: sendMail</code>
+
+		I'm going to ignore this as it comes from EmailJS documentation
+
+	<br>
+
+	- countryfield.js - JavaScript validation - No issues
+
+	<br>
+
+	- In-HTML scripts - No issues
 
 <br>
 
-- [Web Accessibility](https://www.webaccessibility.com) was used to validate website's accessibility:
+- [Web Accessibility](https://www.webaccessibility.com) was used to validate website's accessibility - Avarage Score: 96.5%
 
-	- _Home page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Flanding) - Errors: 0
-	- _About page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fget_recipes) - Errors: 0
-	- _Classes page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Ffull_recipe) - Errors: 0
-	- _Add Class page_ test result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fmy_recipes) - Errors: 0
-	- _Edit Class page_ test result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Shop page_ test result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Product Details page_ test result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Add Product page_ test result [HERE](https://validator.w3.org/nu/?doc=http%3A%2F%2Fcookable.herokuapp.com%2Fedit_recipe) - Errors: 0
-	- _Edit Product page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fsignup) - Errors: 0
-	- _Shopping Bag page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fsignup) - Errors: 0
-	- _Checkout page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Flogin) - Errors: 0
-	- _Checkout Success page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontact) - Errors: 0
-	- _Contact page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Memberships page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Add Membership page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Edit Membership page_ test result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: 0
-    - _Profile page_ test (via direct input, as page password protected) result - Errors: 0
-    - _Login page (allauth)_ test (via direct input, as page password protected) result - Errors: 0
-    - _Logout page (allauth)_ test (via direct input, as page password protected) result - Errors: 0
-    - Sign Up page (allauth)_ test (via direct input, as page password protected) result - Errors: 0
-    - _Confirm Your Email page (allauth)_ test (via direct input, as page password protected) result - Errors: 0
+	- _Home page_ web accesibility: 98%
+	- _About page_ web accesibility: 98%
+	- _Classes page_ web accesibility: 98%
+	- _Add Class page_ web accesibility: 96%
+	- _Edit Class page_ web accesibility: 96%
+	- _Shop page_ web accesibility: 92%
+	- _Product Details page_ web accesibility: 92%
+	- _Add Product page_ web accesibility: 96%
+	- _Edit Product page_ web accesibility: 96%
+	- _Shopping Bag page_ web accesibility: 98%
+	- _Checkout page_ web accesibility: 92%
+	- _Checkout Success page_ web accesibility: 98%
+	- _Contact page_ web accesibility: 98%
+    - _Memberships page_ web accesibility: 96%
+    - _Add Membership page_ web accesibility: 96%
+    - _Edit Membership page_ web accesibility: 96%
+    - _Profile page_ web accesibility: 96%
+    - _Login page (allauth)_ web accesibility: 96%
+    - _Logout page (allauth)_ web accesibility: 98%
+    - _Sign Up page (allauth)_ web accesibility: 96%
 	
-
 <br>
 
     
 - [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) was used to test responsiveness of the website:
-	- _Home page_ - mobile friendly
-	-
+
+	- _Home page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=_em5yvvG8bHaONORsECTDg) - Mobile Friendly
+	- _About page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=2en46f7_ukYc_z_b5JnKFQ) - Mobile Friendly
+	- _Classes page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=flEszDo6hVRjCEOA4UP6lA) - Mobile Friendly
+	- _Add Class page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=Rb9JpnyjaugrHpr2CKjXYA) - Mobile Friendly
+	- _Edit Class page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=-rG577s2SnPHwVYvFa_9wg) - Mobile Friendly
+	- _Shop page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=v6p7Pz90t4fpWdSE44fMog) - Mobile Friendly
+	- _Product Details page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=5hb5glFvnUbITu3vDzJIrA) - Mobile Friendly
+	- _Add Product page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=AjR3Wzb1uiI1VtOg6rNHAw) - Mobile Friendly
+	- _Edit Product page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=6yuhuZ_KIZEcycnJEgx9Rw) - Mobile Friendly
+	- _Shopping Bag page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=WONfShbLfqATD1R7nXKafw) - Mobile Friendly
+	- _Checkout page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=BAwnBjdS5dXgYCnoGL4Ztg) - Mobile Friendly
+	- _Checkout Success page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=jyW3nJFVP2Ebcu-qCexE9A) - Mobile Friendly
+	- _Contact page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=Af7IxmwPyQIxN0Oz0GswYw) - Mobile Friendly
+    - _Memberships page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=YDWHTKyWORgJn-rMA1pD3g) - Mobile Friendly
+    - _Add Membership page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=epIH1PDhj3Rumd17dMNY4w) - Mobile Friendly
+    - _Edit Membership page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=oiEQLCYDjhyDMz1vHUNjJQ) - Mobile Friendly
+    - _Profile page_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=LUjgsvISSCyXVbjqy7cYSw) - Mobile Friendly
+    - _Login page (allauth)_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=GPStYF30RbY_APhfk3M3jg) - Mobile Friendly
+    - _Logout page (allauth)_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=gi-pgFssyGK_6Wiu0baHPw) - Mobile Friendly
+    - _Sign Up page (allauth)_ - test result [HERE](https://search.google.com/test/mobile-friendly/result?id=MkHvxg0ilBCOEH0py2A0ww) - Mobile Friendly
 
 <br>
 	
-- Python code was verified through GitPod's linter, showing only 1 error:
-```	
-"env" imported but unused
-```
+- [PEP8 online](http://pep8online.com/) was used to verify Python code.
+
+	GitPod's linter was showing too many issues coming from automatically created files, like migrations etc. I decided to verify only view.py files:
+
+
+	- bag (views.py) - PASSED
+	- checkout (views.py) - PASSED
+	- classes (views.py) - PASSED
+	- contact (views.py) - PASSED
+	- home (views.py) - PASSED
+	- membership (views.py) - PASSED
+	- products (views.py) - lines 44, 48, 94 and 122 too long (I am not sure how to break safely)
+	- profiles (views.py) - line 23 too long (I am not sure how to break  safely)
 
 <br>
 
