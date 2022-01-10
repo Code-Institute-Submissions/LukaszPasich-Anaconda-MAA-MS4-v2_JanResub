@@ -50,6 +50,7 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 	- [Acknowledgements](#acknowledgements)
 6. [Contact](#contact)
 
+
 ---
 ---
 <br>
@@ -78,7 +79,7 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 - Be able to easily update information on the website.
 
 #### User Stories
-- Link to User Stories - [CLICK HERE](https://docs.google.com/spreadsheets/d/1CIi1zBifp5aBSsgi96vp9oLkrAsZ-a9Hyv3Tw9sNon4/edit?usp=sharing) - 1st Sheet !
+- Link to User Stories - [CLICK HERE](https://docs.google.com/spreadsheets/d/e/2PACX-1vQtepgz1sxYSwDZHEialco1l6u8cdR4BspufZnU-WYdgB797LsUT8uj75v2cxXMWiksonC_jZW4HTag/pubhtml) - 1st Sheet !
 
 <br>
 <br>
