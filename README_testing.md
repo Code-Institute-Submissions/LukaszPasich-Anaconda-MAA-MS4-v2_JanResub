@@ -61,7 +61,7 @@
 	- _Checkout page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fcheckout%2F) - Errors: 3
 	- _Checkout Success / Order History page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fprofile%2Forder_history%2FA6B9F939723E49AA97B306EB2DFE5009) - Errors: 3
 	- _Contact page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fcontact%2Fcontact) - Errors: 3
-    - _Memberships page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcookable.herokuapp.com%2Fcontacta) - Errors: RETEST
+    - _Memberships page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fmemberships%2F) - Errors: 3
     - _Add Membership page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fmemberships%2Fadd%2F) - Errors: 3
     - _Edit Membership page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fmemberships%2Fedit%2F1%2F) - Errors: 3
     - _Profile page_ validator result [HERE](https://validator.w3.org/nu/?doc=https%3A%2F%2Fanacondamaa2.herokuapp.com%2Fprofile) - Errors: 3
@@ -206,7 +206,8 @@
 
 ### UX Testing
 
-- Link to User Stories Testing - [CLICK HERE](https://docs.google.com/spreadsheets/d/1CIi1zBifp5aBSsgi96vp9oLkrAsZ-a9Hyv3Tw9sNon4/edit?usp=sharing)
+- Link to User Stories Testing - [CLICK HERE](https://docs.google.com/spreadsheets/d/1CIi1zBifp5aBSsgi96vp9oLkrAsZ-a9Hyv3Tw9sNon4/edit?usp=sharing) - 2nd Sheet !
+
 
 <br>
 
@@ -244,6 +245,8 @@
 - [23. Checkout Success Page](#checkout-success-page)
 - [24. Order Details Page](#order-details-page)
 - [25. Toasts](#toasts)
+- [26. Browsers Check](#browsers-check)
+- [27. Devices Check](#devices-check)
 
 
 <br>
@@ -821,6 +824,28 @@ CVC: any
 - TEST 25.29 - _Delete class_ by non admin user via manually entering URL - error 'toast' - YES
 - TEST 25.30 - _Contact Form_ JS executed success 'toast' - "Message sent successfully"  - YES
 - TEST 25.31 - "X" button closes toast - YES
+
+<br>
+
+26. #### Browsers Check
+
+Website has been tested on the following Internet Browsers:
+
+- Google Chrome - no issues detected
+- Safari - small issue on Coaches page, addressed in [Bugs Not Fixed](#bugs-not-fixed) section, point 5.
+- Mozilla Firefox - no issues detected
+- Microsoft Edge - no issues detected
+
+<br>
+
+27. #### Devices Check
+
+The website has been checked on Desktop, Laptop and iPhone6.
+
+No major issues specific to devices were discovered.
+
+On mobile devices the _Shopping Bag_ looks a bit crammed and needs to be revised in the future.
+
 
 <br>
 

@@ -78,7 +78,7 @@ As 'Anaconda' academy is growing in members, they would like to automatise the p
 - Be able to easily update information on the website.
 
 #### User Stories
-- Link to User Stories - [CLICK HERE](https://docs.google.com/spreadsheets/d/1CIi1zBifp5aBSsgi96vp9oLkrAsZ-a9Hyv3Tw9sNon4/edit?usp=sharing)
+- Link to User Stories - [CLICK HERE](https://docs.google.com/spreadsheets/d/1CIi1zBifp5aBSsgi96vp9oLkrAsZ-a9Hyv3Tw9sNon4/edit?usp=sharing) - 1st Sheet !
 
 <br>
 <br>
